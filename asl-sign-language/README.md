@@ -1,33 +1,36 @@
-# ASL Sign Language Recognition
+# Nhận diện Ngôn ngữ Ký hiệu ASL
 
-Demo nhan dien ngon ngu ky hieu ASL bang webcam thoi gian thuc.
+Ứng dụng sử dụng mô hình CNN để nhận diện 29 lớp ký hiệu tay ASL (A-Z, del, nothing, space) qua Webcam và giao diện GUI.
 
-## Cau truc thu muc
+## Cấu trúc thư mục
 
-```text
+```
 asl-sign-language/
 ├── models/
 │   └── asl_classifier.keras
 ├── notebooks/
-│   └── asl_training.ipynb
+│   └── Bao_cao_TTNT.ipynb
 ├── docs/
-│   └── Bao_cao_BTL_NhomXX.pdf
 ├── app.py
+├── gui_app.py
 ├── requirements.txt
 └── README.md
 ```
 
-## Huong dan chay demo
-
-1. Dat file mo hinh da huan luyen vao `models/asl_classifier.keras`.
-2. Cai dat thu vien:
+## Cài đặt
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Chay demo:
+## Chạy ứng dụng
 
+Nhận diện qua Webcam:
 ```bash
 python app.py
+```
+
+Nhận diện qua giao diện GUI (chọn ảnh từ máy):
+```bash
+python gui_app.py
 ```
