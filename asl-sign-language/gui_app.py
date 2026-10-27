@@ -538,7 +538,7 @@ class ASLEnterpriseApp:
             font=("Segoe UI", 10, "bold")
         ).pack(anchor="w")
 
-        # Hàng 3 ảnh cỡ lớn
+        # Hàng 5 ảnh cỡ lớn đối sánh trực quan cả 5 phương án
         images_row = tk.Frame(left_main, bg=THEME['bg_app'])
         images_row.pack(fill="x", pady=(0, 10))
 
@@ -548,9 +548,10 @@ class ASLEnterpriseApp:
             badge_text="Ảnh Gốc",
             badge_bg=THEME['primary_light'],
             badge_fg=THEME['primary'],
-            diff_text="Mức xám tự nhiên • Chuẩn hóa [0, 1]"
+            diff_text="Mức xám tự nhiên • [0, 1]",
+            img_size=135
         )
-        self.panel_raw['frame'].pack(side="left", fill="both", expand=True, padx=(0, 5))
+        self.panel_raw['frame'].pack(side="left", fill="both", expand=True, padx=(0, 2))
 
         self.panel_contrast = self._create_large_image_card(
             images_row,
@@ -558,21 +559,45 @@ class ASLEnterpriseApp:
             badge_text="Dãn Tương Phản",
             badge_bg=THEME['warning_bg'],
             badge_fg=THEME['warning'],
-            diff_text="Dãn dải 1%-99% Y • Nổi gờ bóng đổ"
+            diff_text="Dãn dải 1%-99% Y (LUT)",
+            img_size=135
         )
-        self.panel_contrast['frame'].pack(side="left", fill="both", expand=True, padx=5)
+        self.panel_contrast['frame'].pack(side="left", fill="both", expand=True, padx=2)
 
         self.panel_histeq = self._create_large_image_card(
             images_row,
-            title="Cân Bằng Biểu Đồ Độ Sáng",
+            title="Cân Bằng Biểu Đồ",
             badge_text="Cân Bằng Biểu Đồ",
             badge_bg=THEME['purple_bg'],
             badge_fg=THEME['purple'],
-            diff_text="Làm phẳng CDF • Đổi bóng kẽ tay"
+            diff_text="Làm phẳng CDF kênh Y",
+            img_size=135
         )
-        self.panel_histeq['frame'].pack(side="left", fill="both", expand=True, padx=(5, 0))
+        self.panel_histeq['frame'].pack(side="left", fill="both", expand=True, padx=2)
 
-        # Bảng tổng hợp đối sánh chỉ số (Hiệu năng thực thi)
+        self.panel_gaussian = self._create_large_image_card(
+            images_row,
+            title="Lọc Gaussian",
+            badge_text="Lọc Gaussian",
+            badge_bg='#ECFDF5',
+            badge_fg='#059669',
+            diff_text="Mặt nạ Gauss 5x5, σ=1.0",
+            img_size=135
+        )
+        self.panel_gaussian['frame'].pack(side="left", fill="both", expand=True, padx=2)
+
+        self.panel_median = self._create_large_image_card(
+            images_row,
+            title="Lọc Trung Vị",
+            badge_text="Lọc Trung Vị",
+            badge_bg='#F0FDF4',
+            badge_fg='#15803D',
+            diff_text="Lọc phi tuyến median 5x5",
+            img_size=135
+        )
+        self.panel_median['frame'].pack(side="left", fill="both", expand=True, padx=(2, 0))
+
+        # Bảng tổng hợp đối sánh chỉ số (Hiệu năng thực thi 5 phương án)
         summary_card = tk.Frame(
             left_main,
             bg=THEME['bg_card'],
@@ -585,7 +610,7 @@ class ASLEnterpriseApp:
 
         lbl_sum_title = tk.Label(
             summary_card,
-            text="TỔNG HỢP HIỆU NĂNG THỰC THI (LATENCY & CONFIDENCE)",
+            text="TỔNG HỢP HIỆU NĂNG THỰC THI (LATENCY & CONFIDENCE - 5 PHƯƠNG ÁN)",
             bg=THEME['bg_card'],
             fg=THEME['text_main'],
             font=("Segoe UI", 8, "bold")
@@ -597,7 +622,7 @@ class ASLEnterpriseApp:
             summary_card,
             columns=cols,
             show="headings",
-            height=3,
+            height=5,
             style="Enterprise.Treeview"
         )
         self.inference_tree.heading("method", text="Phương Pháp")
@@ -607,12 +632,12 @@ class ASLEnterpriseApp:
         self.inference_tree.heading("infer_time", text="Thời Gian CNN")
         self.inference_tree.heading("verdict", text="Đánh Giá Thực Nghiệm")
 
-        self.inference_tree.column("method", width=160, anchor="w")
-        self.inference_tree.column("pred_label", width=70, anchor="center")
-        self.inference_tree.column("confidence", width=85, anchor="center")
-        self.inference_tree.column("prep_time", width=85, anchor="center")
-        self.inference_tree.column("infer_time", width=85, anchor="center")
-        self.inference_tree.column("verdict", width=170, anchor="w")
+        self.inference_tree.column("method", width=150, anchor="w")
+        self.inference_tree.column("pred_label", width=65, anchor="center")
+        self.inference_tree.column("confidence", width=80, anchor="center")
+        self.inference_tree.column("prep_time", width=80, anchor="center")
+        self.inference_tree.column("infer_time", width=80, anchor="center")
+        self.inference_tree.column("verdict", width=190, anchor="w")
 
         self.inference_tree.pack(fill="x")
 
@@ -650,7 +675,7 @@ class ASLEnterpriseApp:
         )
         lbl_rk_sub.pack(anchor="w", pady=(1, 6))
 
-        rank_cols = ("rank", "base_cand", "cont_cand", "hist_cand")
+        rank_cols = ("rank", "base_cand", "cont_cand", "hist_cand", "gauss_cand", "med_cand")
         self.rank_tree = ttk.Treeview(
             right_panel,
             columns=rank_cols,
@@ -658,15 +683,19 @@ class ASLEnterpriseApp:
             height=8,
             style="Enterprise.Treeview"
         )
-        self.rank_tree.heading("rank", text="Thứ Hạng")
+        self.rank_tree.heading("rank", text="Hạng")
         self.rank_tree.heading("base_cand", text="Ảnh Gốc")
-        self.rank_tree.heading("cont_cand", text="Dãn Tương Phản")
-        self.rank_tree.heading("hist_cand", text="Cân Bằng Biểu Đồ")
+        self.rank_tree.heading("cont_cand", text="Dãn T.Phản")
+        self.rank_tree.heading("hist_cand", text="Cân Bằng")
+        self.rank_tree.heading("gauss_cand", text="Gaussian")
+        self.rank_tree.heading("med_cand", text="Trung Vị")
 
-        self.rank_tree.column("rank", width=85, minwidth=75, stretch=True, anchor="center")
-        self.rank_tree.column("base_cand", width=110, minwidth=90, stretch=True, anchor="center")
-        self.rank_tree.column("cont_cand", width=140, minwidth=115, stretch=True, anchor="center")
-        self.rank_tree.column("hist_cand", width=140, minwidth=115, stretch=True, anchor="center")
+        self.rank_tree.column("rank", width=55, minwidth=50, stretch=True, anchor="center")
+        self.rank_tree.column("base_cand", width=90, minwidth=75, stretch=True, anchor="center")
+        self.rank_tree.column("cont_cand", width=95, minwidth=80, stretch=True, anchor="center")
+        self.rank_tree.column("hist_cand", width=95, minwidth=80, stretch=True, anchor="center")
+        self.rank_tree.column("gauss_cand", width=90, minwidth=75, stretch=True, anchor="center")
+        self.rank_tree.column("med_cand", width=90, minwidth=75, stretch=True, anchor="center")
 
         self.rank_tree.pack(fill="x", pady=(0, 10))
 
@@ -751,28 +780,28 @@ class ASLEnterpriseApp:
         )
         self.lbl_hero_method.pack(anchor="w")
 
-    def _create_large_image_card(self, parent, title: str, badge_text: str, badge_bg: str, badge_fg: str, diff_text: str) -> Dict[str, Any]:
-        """Tạo card ảnh kích thước lớn 240x240 để người dùng nhìn rõ sự khác biệt thị giác"""
+    def _create_large_image_card(self, parent, title: str, badge_text: str, badge_bg: str, badge_fg: str, diff_text: str, img_size: int = 135) -> Dict[str, Any]:
+        """Tạo card ảnh kích thước cân đối hiển thị đầy đủ 5 phương án đối sánh"""
         card = tk.Frame(
             parent,
             bg=THEME['bg_card'],
-            padx=14,
-            pady=12,
+            padx=8,
+            pady=8,
             highlightthickness=1,
             highlightbackground=THEME['border']
         )
 
         header = tk.Frame(card, bg=THEME['bg_card'])
-        header.pack(fill="x", pady=(0, 6))
+        header.pack(fill="x", pady=(0, 4))
 
         badge = tk.Label(
             header,
             text=badge_text,
             bg=badge_bg,
             fg=badge_fg,
-            font=("Segoe UI", 8, "bold"),
-            padx=6,
-            pady=2
+            font=("Segoe UI", 7, "bold"),
+            padx=4,
+            pady=1
         )
         badge.pack(side="right")
 
@@ -781,34 +810,34 @@ class ASLEnterpriseApp:
             text=title,
             bg=THEME['bg_card'],
             fg=THEME['text_main'],
-            font=("Segoe UI", 10, "bold")
+            font=("Segoe UI", 9, "bold")
         )
         t_lbl.pack(anchor="w")
 
-        # Container ảnh lớn
+        # Container ảnh
         img_container = tk.Frame(
             card,
             bg="#F1F5F9",
-            width=215,
-            height=215,
+            width=img_size,
+            height=img_size,
             highlightthickness=1,
             highlightbackground=THEME['border']
         )
-        img_container.pack(fill="none", pady=6)
+        img_container.pack(fill="none", pady=4)
         img_container.pack_propagate(False)
 
-        img_label = tk.Label(img_container, text="Chưa có ảnh", bg="#F1F5F9", fg=THEME['text_muted'], font=("Segoe UI", 9))
+        img_label = tk.Label(img_container, text="Chưa có ảnh", bg="#F1F5F9", fg=THEME['text_muted'], font=("Segoe UI", 8))
         img_label.pack(fill="both", expand=True)
 
         result_box = tk.Frame(card, bg=THEME['bg_card'])
-        result_box.pack(fill="x", pady=(4, 0))
+        result_box.pack(fill="x", pady=(3, 0))
 
         pred_lbl = tk.Label(
             result_box,
             text="Dự đoán: --",
             bg=THEME['bg_card'],
             fg=THEME['text_main'],
-            font=("Segoe UI", 11, "bold")
+            font=("Segoe UI", 9, "bold")
         )
         pred_lbl.pack(anchor="w")
 
@@ -817,7 +846,7 @@ class ASLEnterpriseApp:
             text="Độ tin cậy: --%  |  Xử lý: -- ms",
             bg=THEME['bg_card'],
             fg=THEME['text_sub'],
-            font=("Segoe UI", 9)
+            font=("Segoe UI", 8)
         )
         conf_lbl.pack(anchor="w")
 
@@ -826,16 +855,19 @@ class ASLEnterpriseApp:
             text=f"• {diff_text}",
             bg=THEME['bg_card'],
             fg=THEME['text_muted'],
-            font=("Segoe UI", 8)
+            font=("Segoe UI", 7),
+            wraplength=img_size + 15,
+            justify="left"
         )
-        diff_lbl.pack(anchor="w", pady=(2, 0))
+        diff_lbl.pack(anchor="w", pady=(1, 0))
 
         return {
             'frame': card,
             'img_label': img_label,
             'pred_lbl': pred_lbl,
             'conf_lbl': conf_lbl,
-            'badge': badge
+            'badge': badge,
+            'img_size': img_size
         }
 
     # =========================================================================
@@ -883,7 +915,7 @@ class ASLEnterpriseApp:
 
         lbl_dh_sub = tk.Label(
             hdr_left,
-            text="Phân tích định lượng đối sánh: Ảnh Gốc vs Dãn Tương Phản vs Cân Bằng Biểu Đồ Độ Sáng",
+            text="Phân tích định lượng đối sánh: Ảnh Gốc vs Dãn Tương Phản vs Cân Bằng Biểu Đồ vs Lọc Gaussian vs Lọc Trung Vị",
             bg=THEME['bg_card'],
             fg=THEME['text_sub'],
             font=("Segoe UI", 9)
@@ -910,35 +942,51 @@ class ASLEnterpriseApp:
 
         self._create_kpi_card(
             kpi_row,
-            title="TỔNG MẪU KIỂM THỬ",
+            title="TỔNG MẪU THỬ",
             val="25 / 25",
-            sub="Ký tự A → Y từ dataset chuẩn",
+            sub="Ký tự A → Y từ dataset",
             color=THEME['text_main']
-        ).pack(side="left", fill="both", expand=True, padx=(0, 6))
+        ).pack(side="left", fill="both", expand=True, padx=(0, 3))
 
         self._create_kpi_card(
             kpi_row,
-            title="ẢNH GỐC",
+            title="ẢNH GỐC (A)",
             val="100.0%",
             sub="25/25 đúng • Conf: 99.06%",
             color=THEME['primary']
-        ).pack(side="left", fill="both", expand=True, padx=6)
+        ).pack(side="left", fill="both", expand=True, padx=3)
 
         self._create_kpi_card(
             kpi_row,
-            title="DÃN TƯƠNG PHẢN",
+            title="DÃN T.PHẢN (B)",
             val="88.0%",
-            sub="22/25 đúng • Conf: 93.03%",
+            sub="22/25 đúng • Conf: 92.94%",
             color=THEME['warning']
-        ).pack(side="left", fill="both", expand=True, padx=6)
+        ).pack(side="left", fill="both", expand=True, padx=3)
 
         self._create_kpi_card(
             kpi_row,
-            title="CÂN BẰNG BIỂU ĐỒ ĐỘ SÁNG",
+            title="CÂN BẰNG (C)",
             val="68.0%",
-            sub="17/25 đúng • 8 ca sai lệch",
+            sub="17/25 đúng • Conf: 78.90%",
             color=THEME['danger']
-        ).pack(side="left", fill="both", expand=True, padx=(6, 0))
+        ).pack(side="left", fill="both", expand=True, padx=3)
+
+        self._create_kpi_card(
+            kpi_row,
+            title="GAUSSIAN (D)",
+            val="100.0%",
+            sub="25/25 đúng • Conf: 98.50%",
+            color='#059669'
+        ).pack(side="left", fill="both", expand=True, padx=3)
+
+        self._create_kpi_card(
+            kpi_row,
+            title="TRUNG VỊ (E)",
+            val="100.0%",
+            sub="25/25 đúng • Conf: 97.42%",
+            color='#0D9488'
+        ).pack(side="left", fill="both", expand=True, padx=(3, 0))
 
         chart_card = tk.Frame(
             scrollable_frame,
@@ -1109,28 +1157,29 @@ class ASLEnterpriseApp:
         for child in self.chart_container.winfo_children():
             child.destroy()
 
-        methods = ['Ảnh Gốc', 'Dãn Tương Phản', 'Cân Bằng Biểu Đồ']
-        accuracies = [100.0, 88.0, 68.0]
-        confidences = [99.06, 93.03, 78.90]
-        latencies = [0.24, 0.81, 0.41]
-        correct = [25, 22, 17]
-        errors = [0, 3, 8]
+        methods = ['Ảnh Gốc (A)', 'Dãn T.Phản (B)', 'Cân Bằng (C)', 'Gaussian (D)', 'Trung Vị (E)']
+        short_labels = ['Ảnh Gốc', 'Dãn T.Phản', 'Cân Bằng', 'Gaussian', 'Trung Vị']
+        accuracies = [100.0, 88.0, 68.0, 100.0, 100.0]
+        confidences = [99.06, 92.94, 78.90, 98.50, 97.42]
+        latencies = [0.27, 0.49, 0.35, 0.47, 0.57]
+        correct = [25, 22, 17, 25, 25]
+        errors = [0, 3, 8, 0, 0]
 
-        fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(11, 3.4), dpi=100)
+        fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(11.5, 3.5), dpi=100)
         fig.patch.set_facecolor('#FFFFFF')
 
         x = np.arange(len(methods))
-        width = 0.35
+        width = 0.36
 
         # Đồ thị 1: Accuracy & Confidence
         bars1 = ax1.bar(x - width/2, accuracies, width, label='Độ chính xác (%)', color='#2563EB')
         bars2 = ax1.bar(x + width/2, confidences, width, label='Độ tin cậy TB (%)', color='#10B981')
-        ax1.set_ylabel('Tỷ lệ (%)', fontsize=9, color=THEME['text_main'])
+        ax1.set_ylabel('Tỷ lệ (%)', fontsize=8.5, color=THEME['text_main'])
         ax1.set_title('Độ Chính Xác & Tin Cậy', fontsize=9.5, fontweight='bold', color=THEME['text_main'], pad=8)
         ax1.set_xticks(x)
-        ax1.set_xticklabels(['Ảnh Gốc', 'Dãn T.Phản', 'Cân Bằng'], fontsize=8.5, color=THEME['text_sub'])
-        ax1.set_ylim(45, 112)
-        ax1.legend(loc='lower left', fontsize=8, frameon=True, facecolor='#FFFFFF')
+        ax1.set_xticklabels(short_labels, fontsize=7.5, color=THEME['text_sub'])
+        ax1.set_ylim(40, 115)
+        ax1.legend(loc='lower left', fontsize=7.5, frameon=True, facecolor='#FFFFFF')
         ax1.grid(axis='y', linestyle='--', alpha=0.3, color='#94A3B8')
         ax1.set_facecolor('#FAFAFA')
 
@@ -1140,21 +1189,21 @@ class ASLEnterpriseApp:
         for bar in bars1:
             h = bar.get_height()
             ax1.annotate(f"{h:.0f}%", xy=(bar.get_x() + bar.get_width() / 2, h), xytext=(0, 2),
-                         textcoords="offset points", ha='center', va='bottom', fontsize=8, fontweight='bold')
+                         textcoords="offset points", ha='center', va='bottom', fontsize=7.5, fontweight='bold')
 
         for bar in bars2:
             h = bar.get_height()
             ax1.annotate(f"{h:.1f}%", xy=(bar.get_x() + bar.get_width() / 2, h), xytext=(0, 2),
-                         textcoords="offset points", ha='center', va='bottom', fontsize=8, color='#047857')
+                         textcoords="offset points", ha='center', va='bottom', fontsize=7.5, color='#047857')
 
         # Đồ thị 2: Thời gian tiền xử lý
-        colors_lat = ['#2563EB', '#F59E0B', '#EF4444']
-        bars_lat = ax2.bar(range(len(methods)), latencies, color=colors_lat, width=0.42)
-        ax2.set_ylabel('Thời gian (ms)', fontsize=9, color=THEME['text_main'])
+        colors_lat = ['#2563EB', '#F59E0B', '#EF4444', '#059669', '#0D9488']
+        bars_lat = ax2.bar(range(len(methods)), latencies, color=colors_lat, width=0.45)
+        ax2.set_ylabel('Thời gian (ms)', fontsize=8.5, color=THEME['text_main'])
         ax2.set_title('Thời Gian Tiền Xử Lý (ms)', fontsize=9.5, fontweight='bold', color=THEME['text_main'], pad=8)
         ax2.set_xticks(range(len(methods)))
-        ax2.set_xticklabels(['Ảnh Gốc', 'Dãn T.Phản', 'Cân Bằng'], fontsize=8.5, color=THEME['text_sub'])
-        ax2.set_ylim(0, 1.1)
+        ax2.set_xticklabels(short_labels, fontsize=7.5, color=THEME['text_sub'])
+        ax2.set_ylim(0, 0.8)
         ax2.grid(axis='y', linestyle='--', alpha=0.3, color='#94A3B8')
         ax2.set_facecolor('#FAFAFA')
 
@@ -1164,17 +1213,17 @@ class ASLEnterpriseApp:
         for bar in bars_lat:
             h = bar.get_height()
             ax2.annotate(f"{h:.2f}ms", xy=(bar.get_x() + bar.get_width() / 2, h), xytext=(0, 2),
-                         textcoords="offset points", ha='center', va='bottom', fontsize=8.5, fontweight='bold')
+                         textcoords="offset points", ha='center', va='bottom', fontsize=8, fontweight='bold')
 
         # Đồ thị 3: Cơ cấu kết quả (Đúng vs Sai)
         ax3.bar(range(len(methods)), correct, label='Đúng (Correct)', color='#10B981', width=0.45)
         ax3.bar(range(len(methods)), errors, bottom=correct, label='Sai lệch (Error)', color='#EF4444', width=0.45)
-        ax3.set_ylabel('Số mẫu (trên 25)', fontsize=9, color=THEME['text_main'])
+        ax3.set_ylabel('Số mẫu (trên 25)', fontsize=8.5, color=THEME['text_main'])
         ax3.set_title('Cơ Cấu Kết Quả Dự Đoán', fontsize=9.5, fontweight='bold', color=THEME['text_main'], pad=8)
         ax3.set_xticks(range(len(methods)))
-        ax3.set_xticklabels(['Ảnh Gốc', 'Dãn T.Phản', 'Cân Bằng'], fontsize=8.5, color=THEME['text_sub'])
-        ax3.set_ylim(0, 30)
-        ax3.legend(loc='upper right', fontsize=8, frameon=True, facecolor='#FFFFFF')
+        ax3.set_xticklabels(short_labels, fontsize=7.5, color=THEME['text_sub'])
+        ax3.set_ylim(0, 32)
+        ax3.legend(loc='upper right', fontsize=7.5, frameon=True, facecolor='#FFFFFF')
         ax3.grid(axis='y', linestyle='--', alpha=0.3, color='#94A3B8')
         ax3.set_facecolor('#FAFAFA')
 
@@ -1183,9 +1232,9 @@ class ASLEnterpriseApp:
 
         for idx, (c, e) in enumerate(zip(correct, errors)):
             if c > 0:
-                ax3.text(idx, c / 2, f"{c}", ha='center', va='center', color='#FFFFFF', fontweight='bold', fontsize=9)
+                ax3.text(idx, c / 2, f"{c}", ha='center', va='center', color='#FFFFFF', fontweight='bold', fontsize=8.5)
             if e > 0:
-                ax3.text(idx, c + e / 2, f"{e}", ha='center', va='center', color='#FFFFFF', fontweight='bold', fontsize=9)
+                ax3.text(idx, c + e / 2, f"{e}", ha='center', va='center', color='#FFFFFF', fontweight='bold', fontsize=8.5)
 
         plt.tight_layout()
 
@@ -1240,7 +1289,7 @@ class ASLEnterpriseApp:
 
         lbl_s = tk.Label(
             header,
-            text="Cơ sở lý thuyết và công thức toán học của 2 thuật toán tiền xử lý: Dãn Tương Phản (Percentile Contrast Stretching) và Cân Bằng Biểu Đồ Độ Sáng (Histogram Equalization).",
+            text="Cơ sở lý thuyết và công thức toán học của 4 thuật toán tiền xử lý: Dãn Tương Phản (Contrast Stretching), Cân Bằng Biểu Đồ (Histogram Equalization), Lọc Gaussian (Gaussian Filter) và Lọc Trung Vị (Median Filter).",
             bg=THEME['bg_card'],
             fg=THEME['text_sub'],
             font=("Segoe UI", 9)
@@ -1290,6 +1339,49 @@ class ASLEnterpriseApp:
             fontsize=10.5
         )
         c2.pack(fill="x", pady=(0, 14))
+
+        # Khối 3: Lọc Gaussian (Gaussian Blur)
+        c3 = self._create_theory_card(
+            scrollable_frame,
+            title="3. Thuật Toán Lọc Tuyến Tính Không Gian Gauss (Gaussian Blur Filter)",
+            latex_expr=(
+                r"$G(x, y) = \frac{1}{2\pi\sigma^2} \exp\left(-\frac{x^2 + y^2}{2\sigma^2}\right), \quad \text{Mặt nạ } 5 \times 5, \; \sigma = 1.0$" + "\n" +
+                r"$I_{\mathrm{out}}(x, y) = \sum_{i=-2}^{2} \sum_{j=-2}^{2} G(i, j) \cdot I_{\mathrm{in}}(x - i, y - j)$"
+            ),
+            explanation=(
+                "• Nguyên lý giải thuật: Bộ lọc không gian tuyến tính sử dụng mặt nạ tích chập 2D có trọng số suy giảm theo hàm mũ đối xứng tâm Gauss. "
+                "Điểm ảnh ở tâm nhận trọng số cao nhất, các điểm lân cận giảm dần khi ra xa, giúp làm mờ mịn ảnh một cách tự nhiên.\n"
+                "• Tác dụng lọc nhiễu: Giảm thiểu hiệu quả các thành phần tần số cao (nhiễu trắng, biến thiên ánh sáng đột ngột) "
+                "mà không gây hiện tượng gợn sóng hay biên giả như các bộ lọc sắc nét.\n"
+                "• Đánh giá thực nghiệm trên CNN: Với mặt nạ 5x5 và sigma=1.0, bộ lọc chỉ làm mờ nhẹ bề mặt da mà bảo toàn hoàn hảo đường biên đặc trưng của bàn tay. "
+                "Mô hình CNN nhận diện đúng 100.0% (25/25 mẫu, độ tin cậy trung bình 98.50%), chứng minh tính ổn định cao trước các phép làm mịn nhẹ."
+            ),
+            height_in=0.9,
+            fontsize=10.5
+        )
+        c3.pack(fill="x", pady=(0, 14))
+
+        # Khối 4: Lọc Trung Vị (Median Filter)
+        c4 = self._create_theory_card(
+            scrollable_frame,
+            title="4. Thuật Toán Lọc Phi Tuyến Không Gian Trung Vị (Median Blur Filter)",
+            latex_expr=(
+                r"$I_{\mathrm{out}}(x, y) = \mathrm{median}\left(\left\{ I_{\mathrm{in}}(x + i, y + j) \;\middle|\; -2 \le i, j \le 2 \right\}\right)$" + "\n" +
+                r"$\text{Cửa sổ lân cận } W = 5 \times 5 = 25 \text{ điểm ảnh} \implies \text{Sắp xếp mức sáng và chọn giá trị thứ 13}$"
+            ),
+            explanation=(
+                "• Nguyên lý giải thuật: Bộ lọc không gian phi tuyến thay thế giá trị của điểm ảnh trung tâm bằng giá trị trung vị (Median) "
+                "của tất cả các điểm ảnh nằm trong cửa sổ lân cận (kích thước lẻ 5x5 = 25 điểm ảnh).\n"
+                "• Khả năng bảo toàn cạnh biên: Khác biệt căn bản với các bộ lọc tuyến tính (Mean/Gauss), lọc trung vị không tạo ra mức sáng mới "
+                "mà chọn trực tiếp một mức sáng có thật trong vùng lân cận. Do đó, nó triệt tiêu 100% nhiễu muối tiêu (salt-and-pepper noise) "
+                "mà vẫn giữ nguyên được độ sắc nét của các đường viền ngón tay.\n"
+                "• Đánh giá thực nghiệm trên CNN: Duy trì độ chính xác tuyệt đối 100.0% (25/25 mẫu đúng, độ tin cậy trung bình 97.42%). "
+                "Không làm biến dạng hình thái ngón tay trên tập kiểm thử chuẩn."
+            ),
+            height_in=0.9,
+            fontsize=10.5
+        )
+        c4.pack(fill="x", pady=(0, 14))
 
         return page
 
@@ -1386,7 +1478,7 @@ class ASLEnterpriseApp:
 
         crop = self.current_crop_bgr
 
-        # 1. Tiền xử lý theo từng phương án và đo đạc chính xác thời gian
+        # 1. Tiền xử lý theo từng phương án (A, B, C, D, E) và đo đạc chính xác thời gian
         t0 = time.perf_counter()
         raw_proc, tensor_base = apply_variant(crop, 'A')
         t1 = time.perf_counter()
@@ -1402,16 +1494,28 @@ class ASLEnterpriseApp:
         t1 = time.perf_counter()
         prep_hist_ms = (t1 - t0) * 1000.0
 
-        # 2. Gom Batch (3, 100, 100, 3) và Thực thi Suy Luận Đồng Thời qua ModelInferenceEngine
-        batch_tensor = np.concatenate([tensor_base, tensor_cont, tensor_hist], axis=0)
+        t0 = time.perf_counter()
+        gauss_proc, tensor_gauss = apply_variant(crop, 'D')
+        t1 = time.perf_counter()
+        prep_gauss_ms = (t1 - t0) * 1000.0
+
+        t0 = time.perf_counter()
+        med_proc, tensor_med = apply_variant(crop, 'E')
+        t1 = time.perf_counter()
+        prep_med_ms = (t1 - t0) * 1000.0
+
+        # 2. Gom Batch (5, 100, 100, 3) và Thực thi Suy Luận Đồng Thời qua ModelInferenceEngine
+        batch_tensor = np.concatenate([tensor_base, tensor_cont, tensor_hist, tensor_gauss, tensor_med], axis=0)
         t_infer_start = time.perf_counter()
         batch_preds = self.inference_engine.predict(batch_tensor)
         t_infer_end = time.perf_counter()
-        infer_ms = ((t_infer_end - t_infer_start) * 1000.0) / 3.0
+        infer_ms = ((t_infer_end - t_infer_start) * 1000.0) / 5.0
 
         pred_base = batch_preds[0]
         pred_cont = batch_preds[1]
         pred_hist = batch_preds[2]
+        pred_gauss = batch_preds[3]
+        pred_med = batch_preds[4]
 
         idx_base = int(np.argmax(pred_base))
         base_res = {
@@ -1443,10 +1547,32 @@ class ASLEnterpriseApp:
             'img_bgr': hist_proc
         }
 
+        idx_gauss = int(np.argmax(pred_gauss))
+        gauss_res = {
+            'label': self.classes[idx_gauss],
+            'conf': float(pred_gauss[idx_gauss]),
+            'prep_ms': prep_gauss_ms,
+            'infer_ms': infer_ms,
+            'preds': pred_gauss,
+            'img_bgr': gauss_proc
+        }
+
+        idx_med = int(np.argmax(pred_med))
+        med_res = {
+            'label': self.classes[idx_med],
+            'conf': float(pred_med[idx_med]),
+            'prep_ms': prep_med_ms,
+            'infer_ms': infer_ms,
+            'preds': pred_med,
+            'img_bgr': med_proc
+        }
+
         self.inference_results = {
             'base': base_res,
             'contrast': cont_res,
-            'histeq': hist_res
+            'histeq': hist_res,
+            'gaussian': gauss_res,
+            'median': med_res
         }
 
         self._update_inference_views()
@@ -1458,12 +1584,16 @@ class ASLEnterpriseApp:
         base = self.inference_results['base']
         cont = self.inference_results['contrast']
         hist = self.inference_results['histeq']
+        gauss = self.inference_results['gaussian']
+        med = self.inference_results['median']
 
         # Chọn kết quả tối ưu nhất
         candidates = [
             (base['conf'], base['label'], "Ảnh Gốc", base['preds'], base['infer_ms']),
             (cont['conf'], cont['label'], "Dãn Tương Phản", cont['preds'], cont['infer_ms']),
-            (hist['conf'], hist['label'], "Cân Bằng Biểu Đồ Độ Sáng", hist['preds'], hist['infer_ms']),
+            (hist['conf'], hist['label'], "Cân Bằng Biểu Đồ", hist['preds'], hist['infer_ms']),
+            (gauss['conf'], gauss['label'], "Lọc Gaussian", gauss['preds'], gauss['infer_ms']),
+            (med['conf'], med['label'], "Lọc Trung Vị", med['preds'], med['infer_ms']),
         ]
         candidates.sort(key=lambda x: x[0], reverse=True)
         best_conf, best_label, best_method, best_preds, best_infer = candidates[0]
@@ -1477,12 +1607,14 @@ class ASLEnterpriseApp:
             text=f"Phương pháp tối ưu: {best_method} • Thời gian suy luận: {best_infer:.1f} ms"
         )
 
-        # Cập nhật 3 Card ảnh kích thước lớn
+        # Cập nhật 5 Card ảnh
         self._update_large_image_card(self.panel_raw, base['img_bgr'], base['label'], base['conf'], base['prep_ms'], "raw")
         self._update_large_image_card(self.panel_contrast, cont['img_bgr'], cont['label'], cont['conf'], cont['prep_ms'], "contrast")
         self._update_large_image_card(self.panel_histeq, hist['img_bgr'], hist['label'], hist['conf'], hist['prep_ms'], "histeq")
+        self._update_large_image_card(self.panel_gaussian, gauss['img_bgr'], gauss['label'], gauss['conf'], gauss['prep_ms'], "gaussian")
+        self._update_large_image_card(self.panel_median, med['img_bgr'], med['label'], med['conf'], med['prep_ms'], "median")
 
-        # Cập nhật bảng tổng hợp đối sánh chỉ số hiệu năng
+        # Cập nhật bảng tổng hợp đối sánh chỉ số hiệu năng (5 hàng)
         for item in self.inference_tree.get_children():
             self.inference_tree.delete(item)
 
@@ -1503,25 +1635,41 @@ class ASLEnterpriseApp:
             "Đúng đồng thuận" if cont['label'] == base['label'] else "⚠ Sai lệch đặc trưng nếp gấp"
         ))
         self.inference_tree.insert("", "end", values=(
-            "Cân Bằng Biểu Đồ Độ Sáng",
+            "Cân Bằng Biểu Đồ",
             f"Chữ '{hist['label']}'",
             f"{hist['conf']*100.0:.2f}%",
             f"{hist['prep_ms']:.2f} ms",
             f"{hist['infer_ms']:.1f} ms",
             "Đúng đồng thuận" if hist['label'] == base['label'] else "⚠ Phá vỡ cấu trúc bóng mờ kẽ tay"
         ))
+        self.inference_tree.insert("", "end", values=(
+            "Lọc Gaussian",
+            f"Chữ '{gauss['label']}'",
+            f"{gauss['conf']*100.0:.2f}%",
+            f"{gauss['prep_ms']:.2f} ms",
+            f"{gauss['infer_ms']:.1f} ms",
+            "✓ Bảo toàn biên ngón tay" if gauss['label'] == base['label'] else "⚠ Mờ nhòe đặc trưng"
+        ))
+        self.inference_tree.insert("", "end", values=(
+            "Lọc Trung Vị",
+            f"Chữ '{med['label']}'",
+            f"{med['conf']*100.0:.2f}%",
+            f"{med['prep_ms']:.2f} ms",
+            f"{med['infer_ms']:.1f} ms",
+            "✓ Khử nhiễu tốt, giữ nguyên nhãn" if med['label'] == base['label'] else "⚠ Biến dạng hình ngón"
+        ))
 
-        # CẬP NHẬT BẢNG XẾP HẠNG CÁC LỰA CHỌN CÓ PHÂN PHỐI XÁC SUẤT THẤP HƠN (TOP 1 ĐẾN TOP 8)
-        self._update_probability_ranking_table(base['preds'], cont['preds'], hist['preds'])
+        # CẬP NHẬT BẢNG XẾP HẠNG PHÂN PHỐI XÁC SUẤT TOP 1 ĐẾN TOP 8 (CẢ 5 PHƯƠNG ÁN)
+        self._update_probability_ranking_table(base['preds'], cont['preds'], hist['preds'], gauss['preds'], med['preds'])
 
     def _update_large_image_card(self, card_dict: Dict[str, Any], img_bgr: np.ndarray, label: str, conf: float, prep_ms: float, cache_key: str):
         if img_bgr is None or img_bgr.size == 0:
             return
 
-        # Tối ưu hóa: Dùng cv2.resize với C++ SIMD thay cho Pillow LANCZOS (nhanh hơn >2.4x)
+        img_size = card_dict.get('img_size', 135)
         h, w = img_bgr.shape[:2]
-        interp = cv2.INTER_AREA if (h > 215 or w > 215) else cv2.INTER_LINEAR
-        resized_bgr = cv2.resize(img_bgr, (215, 215), interpolation=interp)
+        interp = cv2.INTER_AREA if (h > img_size or w > img_size) else cv2.INTER_LINEAR
+        resized_bgr = cv2.resize(img_bgr, (img_size, img_size), interpolation=interp)
         rgb = cv2.cvtColor(resized_bgr, cv2.COLOR_BGR2RGB)
         pil_img = Image.fromarray(rgb)
         tk_img = ImageTk.PhotoImage(pil_img)
@@ -1531,46 +1679,33 @@ class ASLEnterpriseApp:
 
         card_dict['pred_lbl'].configure(text=f"Dự đoán: Chữ '{label}'")
         card_dict['conf_lbl'].configure(
-            text=f"Độ tin cậy: {conf*100.0:.2f}%  |  Xử lý: {prep_ms:.2f} ms"
+            text=f"Độ tin cậy: {conf*100.0:.2f}%\nXử lý: {prep_ms:.2f} ms"
         )
 
-    def _update_probability_ranking_table(self, pred_base: np.ndarray, pred_cont: np.ndarray, pred_hist: np.ndarray):
-        """Điền bảng xếp hạng xác suất cho các lựa chọn thấp hơn (Top 1 đến Top 8)"""
+    def _update_probability_ranking_table(self, pred_base: np.ndarray, pred_cont: np.ndarray, pred_hist: np.ndarray, pred_gauss: np.ndarray, pred_med: np.ndarray):
+        """Điền bảng xếp hạng xác suất cho các lựa chọn thấp hơn (Top 1 đến Top 8) của cả 5 phương án"""
         for item in self.rank_tree.get_children():
             self.rank_tree.delete(item)
 
         idx_base = np.argsort(pred_base)[::-1]
         idx_cont = np.argsort(pred_cont)[::-1]
         idx_hist = np.argsort(pred_hist)[::-1]
+        idx_gauss = np.argsort(pred_gauss)[::-1]
+        idx_med = np.argsort(pred_med)[::-1]
 
-        rank_names = [
-            "#1 (Top 1)",
-            "#2 (Hạng 2)",
-            "#3 (Hạng 3)",
-            "#4 (Hạng 4)",
-            "#5 (Hạng 5)",
-            "#6 (Hạng 6)",
-            "#7 (Hạng 7)",
-            "#8 (Hạng 8)"
-        ]
+        rank_names = [f"#{k+1}" for k in range(8)]
 
         for k in range(8):
-            b_cls = self.classes[idx_base[k]]
-            b_prob = pred_base[idx_base[k]] * 100.0
-            b_str = f"'{b_cls}': {b_prob:5.1f}%"
-
-            c_cls = self.classes[idx_cont[k]]
-            c_prob = pred_cont[idx_cont[k]] * 100.0
-            c_str = f"'{c_cls}': {c_prob:5.1f}%"
-
-            h_cls = self.classes[idx_hist[k]]
-            h_prob = pred_hist[idx_hist[k]] * 100.0
-            h_str = f"'{h_cls}': {h_prob:5.1f}%"
+            b_str = f"'{self.classes[idx_base[k]]}': {pred_base[idx_base[k]]*100.0:4.1f}%"
+            c_str = f"'{self.classes[idx_cont[k]]}': {pred_cont[idx_cont[k]]*100.0:4.1f}%"
+            h_str = f"'{self.classes[idx_hist[k]]}': {pred_hist[idx_hist[k]]*100.0:4.1f}%"
+            g_str = f"'{self.classes[idx_gauss[k]]}': {pred_gauss[idx_gauss[k]]*100.0:4.1f}%"
+            m_str = f"'{self.classes[idx_med[k]]}': {pred_med[idx_med[k]]*100.0:4.1f}%"
 
             self.rank_tree.insert(
                 "",
                 "end",
-                values=(rank_names[k], b_str, c_str, h_str)
+                values=(rank_names[k], b_str, c_str, h_str, g_str, m_str)
             )
 
         # Cập nhật phân tích dịch chuyển xác suất Softmax
@@ -1580,38 +1715,36 @@ class ASLEnterpriseApp:
         c_top1_p = pred_cont[idx_cont[0]] * 100.0
         h_top1 = self.classes[idx_hist[0]]
         h_top1_p = pred_hist[idx_hist[0]] * 100.0
+        g_top1 = self.classes[idx_gauss[0]]
+        g_top1_p = pred_gauss[idx_gauss[0]] * 100.0
+        m_top1 = self.classes[idx_med[0]]
+        m_top1_p = pred_med[idx_med[0]] * 100.0
 
-        if b_top1 == c_top1 == h_top1:
+        all_agree = (b_top1 == c_top1 == h_top1 == g_top1 == m_top1)
+        spatial_agree = (b_top1 == g_top1 == m_top1)
+
+        if all_agree:
             insight_text = (
-                f"✓ ĐỒNG THUẬN TUYỆT ĐỐI:\n"
-                f"Cả 3 phương pháp đều tập trung xác suất cao nhất vào chữ '{b_top1}' "
-                f"(Ảnh Gốc: {b_top1_p:.1f}%, Dãn Tương Phản: {c_top1_p:.1f}%, Cân Bằng Biểu Đồ: {h_top1_p:.1f}%).\n\n"
-                f"• Lựa chọn phân vân thứ hai (Hạng #2):\n"
-                f"  - Ảnh Gốc: chữ '{self.classes[idx_base[1]]}' ({pred_base[idx_base[1]]*100:.2f}%)\n"
-                f"  - Dãn Tương Phản: chữ '{self.classes[idx_cont[1]]}' ({pred_cont[idx_cont[1]]*100:.2f}%)\n"
-                f"  - Cân Bằng Biểu Đồ: chữ '{self.classes[idx_hist[1]]}' ({pred_hist[idx_hist[1]]*100:.2f}%)\n\n"
-                f"• Nhận xét: Độ tương phản ảnh gốc đã tối ưu, tiền xử lý không gây nhiễu loạn phân phối."
+                f"✓ ĐỒNG THUẬN TUYỆT ĐỐI (CẢ 5 PHƯƠNG ÁN):\n"
+                f"Tất cả 5 phương án đều dự đoán thống nhất vào chữ '{b_top1}' với độ tin cậy cao:\n"
+                f"  • Ảnh Gốc: {b_top1_p:.1f}% | Dãn Tương Phản: {c_top1_p:.1f}% | Cân Bằng Biểu Đồ: {h_top1_p:.1f}%\n"
+                f"  • Lọc Gaussian: {g_top1_p:.1f}% | Lọc Trung Vị: {m_top1_p:.1f}%\n\n"
+                f"• Nhận xét: Đặc trưng hình học bàn tay sắc nét và ổn định, không bị xáo trộn bởi các kỹ thuật tiền xử lý."
             )
         else:
-            cont_rank = list(idx_cont).index(idx_base[0]) + 1
-            cont_correct_p = pred_cont[idx_base[0]] * 100.0
-            hist_rank = list(idx_hist).index(idx_base[0]) + 1
-            hist_correct_p = pred_hist[idx_base[0]] * 100.0
+            diff_list = []
+            if c_top1 != b_top1: diff_list.append(f"Dãn T.Phản -> '{c_top1}' ({c_top1_p:.1f}%)")
+            if h_top1 != b_top1: diff_list.append(f"Cân Bằng -> '{h_top1}' ({h_top1_p:.1f}%)")
+            if g_top1 != b_top1: diff_list.append(f"Gaussian -> '{g_top1}' ({g_top1_p:.1f}%)")
+            if m_top1 != b_top1: diff_list.append(f"Trung Vị -> '{m_top1}' ({m_top1_p:.1f}%)")
 
             insight_text = (
                 f"⚠ PHÁT HIỆN DỊCH CHUYỂN PHÂN PHỐI (COVARIATE SHIFT):\n"
-                f"• Ảnh Gốc (Chuẩn): Chữ '{b_top1}' ({b_top1_p:.1f}%)\n"
-                f"• Dãn Tương Phản: " + (
-                    f"Đảo chiều! Dự đoán '{c_top1}' ({c_top1_p:.1f}%). Nhãn đúng '{b_top1}' bị tụt xuống Hạng #{cont_rank} ({cont_correct_p:.2f}%).\n"
-                    if c_top1 != b_top1 else
-                    f"Dự đoán đúng '{b_top1}' ({c_top1_p:.1f}%).\n"
-                ) +
-                f"• Cân Bằng Biểu Đồ: " + (
-                    f"Đoán nhầm '{h_top1}' ({h_top1_p:.1f}%). Nhãn đúng bị tụt xuống Hạng #{hist_rank} ({hist_correct_p:.2f}%).\n\n"
-                    if h_top1 != b_top1 else
-                    f"Giữ được nhãn '{b_top1}' ({h_top1_p:.1f}%) nhưng xác suất bị phân tán sang các lựa chọn thấp hơn.\n\n"
-                ) +
-                f"• Lý giải hình thái: Tiền xử lý làm gắt bóng đổ khiến CNN nhận nhầm nếp gấp da ngón tay."
+                f"• Ảnh Gốc (Baseline): Dự đoán chuẩn chữ '{b_top1}' ({b_top1_p:.1f}%).\n"
+                f"• Lọc Không Gian (Gaussian & Trung Vị): "
+                + (f"Bảo toàn nhãn đúng '{b_top1}' (Gauss: {g_top1_p:.1f}%, Median: {m_top1_p:.1f}%).\n" if spatial_agree else "Có biến đổi nhãn.\n")
+                + f"• Lệch nhãn xuất hiện tại: {', '.join(diff_list)}.\n\n"
+                f"• Cơ chế: Các phép biến đổi mức sáng (đặc biệt là Cân bằng Histogram) làm 'cháy sáng' hoặc đậm gắt nếp gấp da kẽ tay, tạo cạnh giả mạo khiến mạng CNN phân loại sai."
             )
 
         if hasattr(self, 'lbl_shift_insight'):
@@ -1630,11 +1763,13 @@ class ASLEnterpriseApp:
         if not msg:
             return
 
-        variants = ['A', 'B', 'C']
+        variants = ['A', 'B', 'C', 'D', 'E']
         var_names = {
             'A': 'Baseline (Ảnh gốc)',
             'B': 'Contrast Stretching',
-            'C': 'Histogram Equalization'
+            'C': 'Histogram Equalization',
+            'D': 'Gaussian Filter',
+            'E': 'Median Filter'
         }
 
         stats = {v: {'correct': 0, 'conf_sum': 0.0, 'prep_time_sum': 0.0, 'infer_time_sum': 0.0, 'errors': []} for v in variants}

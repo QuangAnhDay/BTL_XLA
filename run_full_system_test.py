@@ -89,8 +89,8 @@ def run_full_test():
     print("    [✓] Đọc ảnh test_data hỗ trợ đường dẫn Unicode thành công.")
 
     # 4 & 5. Kiểm tra độc lập các phương pháp tiền xử lý và chuẩn hóa đầu vào CNN
-    print("\n[MỤC 4 & 5] Kiểm tra độc lập các phương pháp tiền xử lý và chuẩn hóa CNN:")
-    variants = ['A', 'B', 'C']
+    print("\n[MỤC 4 & 5] Kiểm tra độc lập các phương pháp tiền xử lý và chuẩn hóa CNN (5 Phương án):")
+    variants = ['A', 'B', 'C', 'D', 'E']
     for v_key in variants:
         proc_bgr, tensor = apply_variant(sample_img, v_key)
         assert proc_bgr.shape == sample_img.shape, f"Sai kích thước BGR tại {v_key}"
@@ -101,13 +101,13 @@ def run_full_test():
         print(f"    - Phương án {v_key:<2} ({VARIANT_DEFINITIONS[v_key]['name']:<24}): "
               f"BGR={proc_bgr.shape} | Tensor={tensor.shape} range=[{tensor.min():.3f}, {tensor.max():.3f}] [✓]")
 
-    # 6. Chạy đối chiếu thực nghiệm A, B, C trên cùng một nguồn ảnh
-    print("\n[MỤC 6] Chạy đối chiếu thực nghiệm A, B, C trên cùng nguồn ảnh:")
+    # 6. Chạy đối chiếu thực nghiệm A, B, C, D, E trên cùng một nguồn ảnh
+    print("\n[MỤC 6] Chạy đối chiếu thực nghiệm cả 5 phương án trên cùng nguồn ảnh:")
     results = runner.run_all_variants(sample_img)
     for v_key in variants:
         r = results[v_key]
         print(f"    - [{v_key}] {r['name']:<24}: Dự đoán '{r['pred_label']}' | Tin cậy: {r['confidence']*100:.2f}% | Xử lý: {r['prep_time_ms']:.2f} ms")
-    print("    [✓] Các phương án chạy độc lập, minh bạch trên cùng một ảnh nguồn.")
+    print("    [✓] Cả 5 phương án chạy độc lập, minh bạch trên cùng một ảnh nguồn.")
 
     # 7. Xử lý ngoại lệ an toàn
     print("\n[MỤC 7] Kiểm tra khả năng xử lý ngoại lệ và an toàn:")
@@ -138,11 +138,11 @@ def run_full_test():
     print("    - Giao diện nạp đầy đủ 25 mẫu test, bảng xếp hạng Top 8 và chuyển đổi 3 phân hệ mượt mà.")
     print("    [✓] Giao diện Enterprise hoạt động hoàn hảo không phụ thuộc Webcam.")
 
-    # 9. Chạy thử nghiệm hàng loạt trên 10 ảnh đầu tiên từ test_data
-    print("\n[MỤC 9] Chạy thử nghiệm hàng loạt trên 10 ảnh đầu tiên từ test_data:")
-    print("-" * 75)
-    print(f"{'Tên file':<32} | {'A (Baseline)':<12} | {'B (Contrast)':<12} | {'C (HistEq)':<12}")
-    print("-" * 75)
+    # 9. Chạy thử nghiệm hàng loạt trên 10 ảnh đầu tiên từ test_data (Đầy đủ 5 Phương án)
+    print("\n[MỤC 9] Chạy thử nghiệm hàng loạt trên 10 ảnh đầu tiên từ test_data (5 Phương án):")
+    print("-" * 98)
+    print(f"{'Tên file':<30} | {'A (Gốc)':<11} | {'B (Contrast)':<12} | {'C (HistEq)':<11} | {'D (Gauss)':<11} | {'E (Median)':<11}")
+    print("-" * 98)
     for sample_file in test_files[:10]:
         s_path = os.path.join('test_data', sample_file)
         s_img = imread_unicode(s_path)
@@ -150,8 +150,10 @@ def run_full_test():
         a_str = f"{s_res['A']['pred_label']} ({s_res['A']['confidence']*100:.1f}%)"
         b_str = f"{s_res['B']['pred_label']} ({s_res['B']['confidence']*100:.1f}%)"
         c_str = f"{s_res['C']['pred_label']} ({s_res['C']['confidence']*100:.1f}%)"
-        print(f"{sample_file[:30]:<32} | {a_str:<12} | {b_str:<12} | {c_str:<12}")
-    print("-" * 75)
+        d_str = f"{s_res['D']['pred_label']} ({s_res['D']['confidence']*100:.1f}%)"
+        e_str = f"{s_res['E']['pred_label']} ({s_res['E']['confidence']*100:.1f}%)"
+        print(f"{sample_file[:28]:<30} | {a_str:<11} | {b_str:<12} | {c_str:<11} | {d_str:<11} | {e_str:<11}")
+    print("-" * 98)
 
     # 10. Tái xác minh hash mô hình nguyên bản 100%
     print("\n[MỤC 10] Tái xác minh tính toàn vẹn mô hình gốc:")
