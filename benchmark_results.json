@@ -1,0 +1,1147 @@
+{
+  "summary": {
+    "total_samples": 25,
+    "variants": {
+      "A": {
+        "name": "Baseline (Ảnh gốc)",
+        "accuracy_pct": 100.0,
+        "correct_count": 25,
+        "avg_conf_pct": 99.06167459487915,
+        "avg_prep_ms": 0.2732839999953285,
+        "avg_infer_ms": 0.7443472000013571,
+        "errors": []
+      },
+      "B": {
+        "name": "Contrast Stretching",
+        "accuracy_pct": 88.0,
+        "correct_count": 22,
+        "avg_conf_pct": 92.94061660766602,
+        "avg_prep_ms": 0.49458800014690496,
+        "avg_infer_ms": 0.7443472000013571,
+        "errors": [
+          {
+            "gt": "A",
+            "pred": "E",
+            "conf": 98.38970899581909,
+            "file": "Screenshot 2026-07-08 191711.png"
+          },
+          {
+            "gt": "N",
+            "pred": "M",
+            "conf": 75.96048712730408,
+            "file": "Screenshot 2026-07-09 010041.png"
+          },
+          {
+            "gt": "S",
+            "pred": "M",
+            "conf": 79.34271097183228,
+            "file": "Screenshot 2026-07-09 010107.png"
+          }
+        ]
+      },
+      "C": {
+        "name": "Histogram Equalization",
+        "accuracy_pct": 68.0,
+        "correct_count": 17,
+        "avg_conf_pct": 78.90452635288239,
+        "avg_prep_ms": 0.3498599996964913,
+        "avg_infer_ms": 0.7443472000013571,
+        "errors": [
+          {
+            "gt": "G",
+            "pred": "O",
+            "conf": 43.985193967819214,
+            "file": "Screenshot 2026-07-09 010002.png"
+          },
+          {
+            "gt": "I",
+            "pred": "E",
+            "conf": 88.39253187179565,
+            "file": "Screenshot 2026-07-09 010012.png"
+          },
+          {
+            "gt": "N",
+            "pred": "M",
+            "conf": 81.69599771499634,
+            "file": "Screenshot 2026-07-09 010041.png"
+          },
+          {
+            "gt": "Q",
+            "pred": "G",
+            "conf": 71.45856618881226,
+            "file": "Screenshot 2026-07-09 010058.png"
+          },
+          {
+            "gt": "R",
+            "pred": "B",
+            "conf": 44.9280709028244,
+            "file": "Screenshot 2026-07-09 010103.png"
+          },
+          {
+            "gt": "S",
+            "pred": "G",
+            "conf": 74.56082701683044,
+            "file": "Screenshot 2026-07-09 010107.png"
+          },
+          {
+            "gt": "U",
+            "pred": "R",
+            "conf": 41.5736198425293,
+            "file": "Screenshot 2026-07-09 010118.png"
+          },
+          {
+            "gt": "X",
+            "pred": "R",
+            "conf": 69.17552947998047,
+            "file": "Screenshot 2026-07-09 010131.png"
+          }
+        ]
+      },
+      "D": {
+        "name": "Gaussian Filter",
+        "accuracy_pct": 100.0,
+        "correct_count": 25,
+        "avg_conf_pct": 98.50276565551758,
+        "avg_prep_ms": 0.47463999995670747,
+        "avg_infer_ms": 0.7443472000013571,
+        "errors": []
+      },
+      "E": {
+        "name": "Median Filter",
+        "accuracy_pct": 100.0,
+        "correct_count": 25,
+        "avg_conf_pct": 97.4157567024231,
+        "avg_prep_ms": 0.5728120000276249,
+        "avg_infer_ms": 0.7443472000013571,
+        "errors": []
+      }
+    }
+  },
+  "samples": [
+    {
+      "filename": "Screenshot 2026-07-08 191711.png",
+      "gt": "A",
+      "results": {
+        "A": {
+          "pred": "A",
+          "conf": 99.86870884895325,
+          "is_correct": true,
+          "prep_ms": 0.4358000005595386,
+          "infer_ms": 0.8162399997672765
+        },
+        "B": {
+          "pred": "E",
+          "conf": 98.38970899581909,
+          "is_correct": false,
+          "prep_ms": 0.7213999997475185,
+          "infer_ms": 0.8162399997672765
+        },
+        "C": {
+          "pred": "A",
+          "conf": 91.67932868003845,
+          "is_correct": true,
+          "prep_ms": 0.43759999971371144,
+          "infer_ms": 0.8162399997672765
+        },
+        "D": {
+          "pred": "A",
+          "conf": 99.88089799880981,
+          "is_correct": true,
+          "prep_ms": 3.392399999938789,
+          "infer_ms": 0.8162399997672765
+        },
+        "E": {
+          "pred": "A",
+          "conf": 99.89940524101257,
+          "is_correct": true,
+          "prep_ms": 0.6901999986439478,
+          "infer_ms": 0.8162399997672765
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 005933.png",
+      "gt": "B",
+      "results": {
+        "A": {
+          "pred": "B",
+          "conf": 99.99984502792358,
+          "is_correct": true,
+          "prep_ms": 0.24870000015653204,
+          "infer_ms": 0.8398400001169648
+        },
+        "B": {
+          "pred": "B",
+          "conf": 99.99996423721313,
+          "is_correct": true,
+          "prep_ms": 0.4733000005217036,
+          "infer_ms": 0.8398400001169648
+        },
+        "C": {
+          "pred": "B",
+          "conf": 99.974125623703,
+          "is_correct": true,
+          "prep_ms": 0.3222999985155184,
+          "infer_ms": 0.8398400001169648
+        },
+        "D": {
+          "pred": "B",
+          "conf": 99.98341798782349,
+          "is_correct": true,
+          "prep_ms": 0.4654000003938563,
+          "infer_ms": 0.8398400001169648
+        },
+        "E": {
+          "pred": "B",
+          "conf": 99.90591406822205,
+          "is_correct": true,
+          "prep_ms": 0.6233000003703637,
+          "infer_ms": 0.8398400001169648
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 005939.png",
+      "gt": "C",
+      "results": {
+        "A": {
+          "pred": "C",
+          "conf": 99.00234341621399,
+          "is_correct": true,
+          "prep_ms": 0.25319999986095354,
+          "infer_ms": 0.7171799999923678
+        },
+        "B": {
+          "pred": "C",
+          "conf": 85.69554090499878,
+          "is_correct": true,
+          "prep_ms": 0.5571000001509674,
+          "infer_ms": 0.7171799999923678
+        },
+        "C": {
+          "pred": "C",
+          "conf": 98.52789640426636,
+          "is_correct": true,
+          "prep_ms": 0.3591999993659556,
+          "infer_ms": 0.7171799999923678
+        },
+        "D": {
+          "pred": "C",
+          "conf": 90.75698256492615,
+          "is_correct": true,
+          "prep_ms": 0.4067999998369487,
+          "infer_ms": 0.7171799999923678
+        },
+        "E": {
+          "pred": "C",
+          "conf": 95.76878547668457,
+          "is_correct": true,
+          "prep_ms": 0.5565999999816995,
+          "infer_ms": 0.7171799999923678
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 005946.png",
+      "gt": "D",
+      "results": {
+        "A": {
+          "pred": "D",
+          "conf": 99.97449517250061,
+          "is_correct": true,
+          "prep_ms": 0.3015000002051238,
+          "infer_ms": 0.7085199998982716
+        },
+        "B": {
+          "pred": "D",
+          "conf": 99.9872088432312,
+          "is_correct": true,
+          "prep_ms": 0.5722000005334849,
+          "infer_ms": 0.7085199998982716
+        },
+        "C": {
+          "pred": "D",
+          "conf": 99.58682060241699,
+          "is_correct": true,
+          "prep_ms": 0.3524999992805533,
+          "infer_ms": 0.7085199998982716
+        },
+        "D": {
+          "pred": "D",
+          "conf": 99.95704293251038,
+          "is_correct": true,
+          "prep_ms": 0.29910000012023374,
+          "infer_ms": 0.7085199998982716
+        },
+        "E": {
+          "pred": "D",
+          "conf": 99.98241066932678,
+          "is_correct": true,
+          "prep_ms": 0.5909000010433374,
+          "infer_ms": 0.7085199998982716
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 005950.png",
+      "gt": "E",
+      "results": {
+        "A": {
+          "pred": "E",
+          "conf": 99.99887943267822,
+          "is_correct": true,
+          "prep_ms": 0.2382000002398854,
+          "infer_ms": 0.7130599999072729
+        },
+        "B": {
+          "pred": "E",
+          "conf": 99.99157190322876,
+          "is_correct": true,
+          "prep_ms": 0.5192999997234438,
+          "infer_ms": 0.7130599999072729
+        },
+        "C": {
+          "pred": "E",
+          "conf": 99.98339414596558,
+          "is_correct": true,
+          "prep_ms": 0.34500000037951395,
+          "infer_ms": 0.7130599999072729
+        },
+        "D": {
+          "pred": "E",
+          "conf": 99.99762773513794,
+          "is_correct": true,
+          "prep_ms": 0.313599999572034,
+          "infer_ms": 0.7130599999072729
+        },
+        "E": {
+          "pred": "E",
+          "conf": 99.99769926071167,
+          "is_correct": true,
+          "prep_ms": 0.6317999996099388,
+          "infer_ms": 0.7130599999072729
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 005957.png",
+      "gt": "F",
+      "results": {
+        "A": {
+          "pred": "F",
+          "conf": 98.70597124099731,
+          "is_correct": true,
+          "prep_ms": 0.2587999988463707,
+          "infer_ms": 0.8128400000714464
+        },
+        "B": {
+          "pred": "F",
+          "conf": 99.9974250793457,
+          "is_correct": true,
+          "prep_ms": 0.5282000001898268,
+          "infer_ms": 0.8128400000714464
+        },
+        "C": {
+          "pred": "F",
+          "conf": 99.99995231628418,
+          "is_correct": true,
+          "prep_ms": 0.37039999915577937,
+          "infer_ms": 0.8128400000714464
+        },
+        "D": {
+          "pred": "F",
+          "conf": 98.77880215644836,
+          "is_correct": true,
+          "prep_ms": 0.28140000176790636,
+          "infer_ms": 0.8128400000714464
+        },
+        "E": {
+          "pred": "F",
+          "conf": 99.25166964530945,
+          "is_correct": true,
+          "prep_ms": 0.5844000006618444,
+          "infer_ms": 0.8128400000714464
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 010002.png",
+      "gt": "G",
+      "results": {
+        "A": {
+          "pred": "G",
+          "conf": 99.99598264694214,
+          "is_correct": true,
+          "prep_ms": 0.537899999471847,
+          "infer_ms": 0.9313999998994404
+        },
+        "B": {
+          "pred": "G",
+          "conf": 97.8805661201477,
+          "is_correct": true,
+          "prep_ms": 0.6291000008786796,
+          "infer_ms": 0.9313999998994404
+        },
+        "C": {
+          "pred": "O",
+          "conf": 43.985193967819214,
+          "is_correct": false,
+          "prep_ms": 0.422499999331194,
+          "infer_ms": 0.9313999998994404
+        },
+        "D": {
+          "pred": "G",
+          "conf": 99.99536275863647,
+          "is_correct": true,
+          "prep_ms": 0.4086999997525709,
+          "infer_ms": 0.9313999998994404
+        },
+        "E": {
+          "pred": "G",
+          "conf": 99.99593496322632,
+          "is_correct": true,
+          "prep_ms": 0.6750000011379598,
+          "infer_ms": 0.9313999998994404
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 010007.png",
+      "gt": "H",
+      "results": {
+        "A": {
+          "pred": "H",
+          "conf": 93.5563325881958,
+          "is_correct": true,
+          "prep_ms": 0.24790000134089496,
+          "infer_ms": 0.7217800000944408
+        },
+        "B": {
+          "pred": "H",
+          "conf": 82.74492621421814,
+          "is_correct": true,
+          "prep_ms": 0.5594000012933975,
+          "infer_ms": 0.7217800000944408
+        },
+        "C": {
+          "pred": "H",
+          "conf": 58.40575098991394,
+          "is_correct": true,
+          "prep_ms": 0.373500000932836,
+          "infer_ms": 0.7217800000944408
+        },
+        "D": {
+          "pred": "H",
+          "conf": 93.19196939468384,
+          "is_correct": true,
+          "prep_ms": 0.5505999997694744,
+          "infer_ms": 0.7217800000944408
+        },
+        "E": {
+          "pred": "H",
+          "conf": 91.43105149269104,
+          "is_correct": true,
+          "prep_ms": 0.5731000001105713,
+          "infer_ms": 0.7217800000944408
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 010012.png",
+      "gt": "I",
+      "results": {
+        "A": {
+          "pred": "I",
+          "conf": 99.99861717224121,
+          "is_correct": true,
+          "prep_ms": 0.26699999943957664,
+          "infer_ms": 0.792860000001383
+        },
+        "B": {
+          "pred": "I",
+          "conf": 99.99148845672607,
+          "is_correct": true,
+          "prep_ms": 0.39199999991978984,
+          "infer_ms": 0.792860000001383
+        },
+        "C": {
+          "pred": "E",
+          "conf": 88.39253187179565,
+          "is_correct": false,
+          "prep_ms": 0.27039999986300245,
+          "infer_ms": 0.792860000001383
+        },
+        "D": {
+          "pred": "I",
+          "conf": 99.99843835830688,
+          "is_correct": true,
+          "prep_ms": 0.3271000005042879,
+          "infer_ms": 0.792860000001383
+        },
+        "E": {
+          "pred": "I",
+          "conf": 99.99924898147583,
+          "is_correct": true,
+          "prep_ms": 0.4552000009425683,
+          "infer_ms": 0.792860000001383
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 010020.png",
+      "gt": "J",
+      "results": {
+        "A": {
+          "pred": "J",
+          "conf": 99.98962879180908,
+          "is_correct": true,
+          "prep_ms": 0.18379999892204069,
+          "infer_ms": 0.669460000062827
+        },
+        "B": {
+          "pred": "J",
+          "conf": 94.49653029441833,
+          "is_correct": true,
+          "prep_ms": 0.3522000006341841,
+          "infer_ms": 0.669460000062827
+        },
+        "C": {
+          "pred": "J",
+          "conf": 52.69443988800049,
+          "is_correct": true,
+          "prep_ms": 0.2551000015955651,
+          "infer_ms": 0.669460000062827
+        },
+        "D": {
+          "pred": "J",
+          "conf": 99.9815285205841,
+          "is_correct": true,
+          "prep_ms": 0.28980000024603214,
+          "infer_ms": 0.669460000062827
+        },
+        "E": {
+          "pred": "J",
+          "conf": 99.98650550842285,
+          "is_correct": true,
+          "prep_ms": 0.6462000001192791,
+          "infer_ms": 0.669460000062827
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 010026.png",
+      "gt": "K",
+      "results": {
+        "A": {
+          "pred": "K",
+          "conf": 99.53910112380981,
+          "is_correct": true,
+          "prep_ms": 0.26480000087758526,
+          "infer_ms": 0.7063399996695807
+        },
+        "B": {
+          "pred": "K",
+          "conf": 99.37776327133179,
+          "is_correct": true,
+          "prep_ms": 0.4667000011977507,
+          "infer_ms": 0.7063399996695807
+        },
+        "C": {
+          "pred": "K",
+          "conf": 99.98034834861755,
+          "is_correct": true,
+          "prep_ms": 0.33599999915168155,
+          "infer_ms": 0.7063399996695807
+        },
+        "D": {
+          "pred": "K",
+          "conf": 99.56945180892944,
+          "is_correct": true,
+          "prep_ms": 0.32049999936134554,
+          "infer_ms": 0.7063399996695807
+        },
+        "E": {
+          "pred": "K",
+          "conf": 99.59278702735901,
+          "is_correct": true,
+          "prep_ms": 0.5324999983713496,
+          "infer_ms": 0.7063399996695807
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 010031.png",
+      "gt": "L",
+      "results": {
+        "A": {
+          "pred": "L",
+          "conf": 99.99927282333374,
+          "is_correct": true,
+          "prep_ms": 0.2950999987660907,
+          "infer_ms": 0.714700000025914
+        },
+        "B": {
+          "pred": "L",
+          "conf": 99.99302625656128,
+          "is_correct": true,
+          "prep_ms": 0.532500000190339,
+          "infer_ms": 0.714700000025914
+        },
+        "C": {
+          "pred": "L",
+          "conf": 52.102965116500854,
+          "is_correct": true,
+          "prep_ms": 0.3538000000844477,
+          "infer_ms": 0.714700000025914
+        },
+        "D": {
+          "pred": "L",
+          "conf": 99.99738931655884,
+          "is_correct": true,
+          "prep_ms": 0.382099999114871,
+          "infer_ms": 0.714700000025914
+        },
+        "E": {
+          "pred": "L",
+          "conf": 99.99927282333374,
+          "is_correct": true,
+          "prep_ms": 0.6149000000732485,
+          "infer_ms": 0.714700000025914
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 010036.png",
+      "gt": "M",
+      "results": {
+        "A": {
+          "pred": "M",
+          "conf": 99.98699426651001,
+          "is_correct": true,
+          "prep_ms": 0.26499999876250513,
+          "infer_ms": 0.7158800002798671
+        },
+        "B": {
+          "pred": "M",
+          "conf": 99.98844861984253,
+          "is_correct": true,
+          "prep_ms": 0.42659999962779693,
+          "infer_ms": 0.7158800002798671
+        },
+        "C": {
+          "pred": "M",
+          "conf": 99.96781349182129,
+          "is_correct": true,
+          "prep_ms": 0.4407999986142386,
+          "infer_ms": 0.7158800002798671
+        },
+        "D": {
+          "pred": "M",
+          "conf": 99.97342228889465,
+          "is_correct": true,
+          "prep_ms": 0.3756000005523674,
+          "infer_ms": 0.7158800002798671
+        },
+        "E": {
+          "pred": "M",
+          "conf": 99.9760091304779,
+          "is_correct": true,
+          "prep_ms": 0.7138000000850298,
+          "infer_ms": 0.7158800002798671
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 010041.png",
+      "gt": "N",
+      "results": {
+        "A": {
+          "pred": "N",
+          "conf": 99.4521975517273,
+          "is_correct": true,
+          "prep_ms": 0.23049999981594738,
+          "infer_ms": 0.8819200000289129
+        },
+        "B": {
+          "pred": "M",
+          "conf": 75.96048712730408,
+          "is_correct": false,
+          "prep_ms": 0.4300999989936827,
+          "infer_ms": 0.8819200000289129
+        },
+        "C": {
+          "pred": "M",
+          "conf": 81.69599771499634,
+          "is_correct": false,
+          "prep_ms": 0.3670999994938029,
+          "infer_ms": 0.8819200000289129
+        },
+        "D": {
+          "pred": "N",
+          "conf": 99.32782053947449,
+          "is_correct": true,
+          "prep_ms": 0.3209999995306134,
+          "infer_ms": 0.8819200000289129
+        },
+        "E": {
+          "pred": "N",
+          "conf": 98.87241721153259,
+          "is_correct": true,
+          "prep_ms": 0.6422999995265855,
+          "infer_ms": 0.8819200000289129
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 010046.png",
+      "gt": "O",
+      "results": {
+        "A": {
+          "pred": "O",
+          "conf": 99.94353652000427,
+          "is_correct": true,
+          "prep_ms": 0.24750000011408702,
+          "infer_ms": 0.7220800001960015
+        },
+        "B": {
+          "pred": "O",
+          "conf": 99.87573623657227,
+          "is_correct": true,
+          "prep_ms": 0.46740000107092783,
+          "infer_ms": 0.7220800001960015
+        },
+        "C": {
+          "pred": "O",
+          "conf": 88.23972344398499,
+          "is_correct": true,
+          "prep_ms": 0.4017999999632593,
+          "infer_ms": 0.7220800001960015
+        },
+        "D": {
+          "pred": "O",
+          "conf": 99.79206919670105,
+          "is_correct": true,
+          "prep_ms": 0.3245999996579485,
+          "infer_ms": 0.7220800001960015
+        },
+        "E": {
+          "pred": "O",
+          "conf": 99.89162683486938,
+          "is_correct": true,
+          "prep_ms": 0.4809000001841923,
+          "infer_ms": 0.7220800001960015
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 010054.png",
+      "gt": "P",
+      "results": {
+        "A": {
+          "pred": "P",
+          "conf": 99.98475313186646,
+          "is_correct": true,
+          "prep_ms": 0.31599999965692405,
+          "infer_ms": 0.8152999998856103
+        },
+        "B": {
+          "pred": "P",
+          "conf": 98.48806858062744,
+          "is_correct": true,
+          "prep_ms": 0.5565999999816995,
+          "infer_ms": 0.8152999998856103
+        },
+        "C": {
+          "pred": "P",
+          "conf": 99.08603429794312,
+          "is_correct": true,
+          "prep_ms": 0.46659999861731194,
+          "infer_ms": 0.8152999998856103
+        },
+        "D": {
+          "pred": "P",
+          "conf": 99.90758895874023,
+          "is_correct": true,
+          "prep_ms": 0.40160000025935005,
+          "infer_ms": 0.8152999998856103
+        },
+        "E": {
+          "pred": "P",
+          "conf": 99.97004270553589,
+          "is_correct": true,
+          "prep_ms": 0.5917999988014344,
+          "infer_ms": 0.8152999998856103
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 010058.png",
+      "gt": "Q",
+      "results": {
+        "A": {
+          "pred": "Q",
+          "conf": 100.0,
+          "is_correct": true,
+          "prep_ms": 0.2519999998185085,
+          "infer_ms": 0.6108800000220072
+        },
+        "B": {
+          "pred": "Q",
+          "conf": 98.66069555282593,
+          "is_correct": true,
+          "prep_ms": 0.49790000048233196,
+          "infer_ms": 0.6108800000220072
+        },
+        "C": {
+          "pred": "G",
+          "conf": 71.45856618881226,
+          "is_correct": false,
+          "prep_ms": 0.2781999992294004,
+          "infer_ms": 0.6108800000220072
+        },
+        "D": {
+          "pred": "Q",
+          "conf": 100.0,
+          "is_correct": true,
+          "prep_ms": 0.2948000001197215,
+          "infer_ms": 0.6108800000220072
+        },
+        "E": {
+          "pred": "Q",
+          "conf": 100.0,
+          "is_correct": true,
+          "prep_ms": 0.534200000402052,
+          "infer_ms": 0.6108800000220072
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 010103.png",
+      "gt": "R",
+      "results": {
+        "A": {
+          "pred": "R",
+          "conf": 99.94045495986938,
+          "is_correct": true,
+          "prep_ms": 0.21240000023681205,
+          "infer_ms": 0.6693799998174654
+        },
+        "B": {
+          "pred": "R",
+          "conf": 99.97310042381287,
+          "is_correct": true,
+          "prep_ms": 0.46379999912460335,
+          "infer_ms": 0.6693799998174654
+        },
+        "C": {
+          "pred": "B",
+          "conf": 44.9280709028244,
+          "is_correct": false,
+          "prep_ms": 0.3479000006336719,
+          "infer_ms": 0.6693799998174654
+        },
+        "D": {
+          "pred": "R",
+          "conf": 99.02424216270447,
+          "is_correct": true,
+          "prep_ms": 0.3369000005477574,
+          "infer_ms": 0.6693799998174654
+        },
+        "E": {
+          "pred": "R",
+          "conf": 66.8855369091034,
+          "is_correct": true,
+          "prep_ms": 0.4752000004373258,
+          "infer_ms": 0.6693799998174654
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 010107.png",
+      "gt": "S",
+      "results": {
+        "A": {
+          "pred": "S",
+          "conf": 99.99992847442627,
+          "is_correct": true,
+          "prep_ms": 0.29270000050019007,
+          "infer_ms": 0.6820200000220211
+        },
+        "B": {
+          "pred": "M",
+          "conf": 79.34271097183228,
+          "is_correct": false,
+          "prep_ms": 0.5144999995536637,
+          "infer_ms": 0.6820200000220211
+        },
+        "C": {
+          "pred": "G",
+          "conf": 74.56082701683044,
+          "is_correct": false,
+          "prep_ms": 0.3457000002526911,
+          "infer_ms": 0.6820200000220211
+        },
+        "D": {
+          "pred": "S",
+          "conf": 99.99995231628418,
+          "is_correct": true,
+          "prep_ms": 0.32309999915014487,
+          "infer_ms": 0.6820200000220211
+        },
+        "E": {
+          "pred": "S",
+          "conf": 99.99995231628418,
+          "is_correct": true,
+          "prep_ms": 0.47090000043681357,
+          "infer_ms": 0.6820200000220211
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 010111.png",
+      "gt": "T",
+      "results": {
+        "A": {
+          "pred": "T",
+          "conf": 99.96854066848755,
+          "is_correct": true,
+          "prep_ms": 0.23740000142424833,
+          "infer_ms": 0.7430999998177867
+        },
+        "B": {
+          "pred": "T",
+          "conf": 93.85526180267334,
+          "is_correct": true,
+          "prep_ms": 0.43819999882543925,
+          "infer_ms": 0.7430999998177867
+        },
+        "C": {
+          "pred": "T",
+          "conf": 95.70768475532532,
+          "is_correct": true,
+          "prep_ms": 0.32499999906576704,
+          "infer_ms": 0.7430999998177867
+        },
+        "D": {
+          "pred": "T",
+          "conf": 99.9534010887146,
+          "is_correct": true,
+          "prep_ms": 0.32749999991210643,
+          "infer_ms": 0.7430999998177867
+        },
+        "E": {
+          "pred": "T",
+          "conf": 99.96923208236694,
+          "is_correct": true,
+          "prep_ms": 0.543999998626532,
+          "infer_ms": 0.7430999998177867
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 010118.png",
+      "gt": "U",
+      "results": {
+        "A": {
+          "pred": "U",
+          "conf": 99.6292769908905,
+          "is_correct": true,
+          "prep_ms": 0.20489999951678328,
+          "infer_ms": 0.711080000110087
+        },
+        "B": {
+          "pred": "U",
+          "conf": 64.0425443649292,
+          "is_correct": true,
+          "prep_ms": 0.5065000004833564,
+          "infer_ms": 0.711080000110087
+        },
+        "C": {
+          "pred": "R",
+          "conf": 41.5736198425293,
+          "is_correct": false,
+          "prep_ms": 0.36439999894355424,
+          "infer_ms": 0.711080000110087
+        },
+        "D": {
+          "pred": "U",
+          "conf": 99.62210655212402,
+          "is_correct": true,
+          "prep_ms": 0.31490000037592836,
+          "infer_ms": 0.711080000110087
+        },
+        "E": {
+          "pred": "U",
+          "conf": 99.60293769836426,
+          "is_correct": true,
+          "prep_ms": 0.523599999723956,
+          "infer_ms": 0.711080000110087
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 010122.png",
+      "gt": "V",
+      "results": {
+        "A": {
+          "pred": "V",
+          "conf": 89.95091319084167,
+          "is_correct": true,
+          "prep_ms": 0.1999000014620833,
+          "infer_ms": 0.7223399999929825
+        },
+        "B": {
+          "pred": "V",
+          "conf": 87.45061755180359,
+          "is_correct": true,
+          "prep_ms": 0.3835000006802147,
+          "infer_ms": 0.7223399999929825
+        },
+        "C": {
+          "pred": "V",
+          "conf": 65.5687153339386,
+          "is_correct": true,
+          "prep_ms": 0.2710999997361796,
+          "infer_ms": 0.7223399999929825
+        },
+        "D": {
+          "pred": "V",
+          "conf": 90.2548611164093,
+          "is_correct": true,
+          "prep_ms": 0.2948000001197215,
+          "infer_ms": 0.7223399999929825
+        },
+        "E": {
+          "pred": "V",
+          "conf": 90.31322002410889,
+          "is_correct": true,
+          "prep_ms": 0.4434000002220273,
+          "infer_ms": 0.7223399999929825
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 010127.png",
+      "gt": "W",
+      "results": {
+        "A": {
+          "pred": "W",
+          "conf": 99.36352968215942,
+          "is_correct": true,
+          "prep_ms": 0.3505000004224712,
+          "infer_ms": 0.6881799999973737
+        },
+        "B": {
+          "pred": "W",
+          "conf": 96.60133719444275,
+          "is_correct": true,
+          "prep_ms": 0.5665000007866183,
+          "infer_ms": 0.6881799999973737
+        },
+        "C": {
+          "pred": "W",
+          "conf": 95.19782662391663,
+          "is_correct": true,
+          "prep_ms": 0.26819999948202167,
+          "infer_ms": 0.6881799999973737
+        },
+        "D": {
+          "pred": "W",
+          "conf": 99.50335025787354,
+          "is_correct": true,
+          "prep_ms": 0.2922000003309222,
+          "infer_ms": 0.6881799999973737
+        },
+        "E": {
+          "pred": "W",
+          "conf": 99.56425428390503,
+          "is_correct": true,
+          "prep_ms": 0.4515000000537839,
+          "infer_ms": 0.6881799999973737
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 010131.png",
+      "gt": "X",
+      "results": {
+        "A": {
+          "pred": "X",
+          "conf": 97.90294170379639,
+          "is_correct": true,
+          "prep_ms": 0.2853999994840706,
+          "infer_ms": 0.7220800001960015
+        },
+        "B": {
+          "pred": "X",
+          "conf": 70.94785571098328,
+          "is_correct": true,
+          "prep_ms": 0.44549999984155875,
+          "infer_ms": 0.7220800001960015
+        },
+        "C": {
+          "pred": "R",
+          "conf": 69.17552947998047,
+          "is_correct": false,
+          "prep_ms": 0.37140000131330453,
+          "infer_ms": 0.7220800001960015
+        },
+        "D": {
+          "pred": "X",
+          "conf": 94.06382441520691,
+          "is_correct": true,
+          "prep_ms": 0.444499999503023,
+          "infer_ms": 0.7220800001960015
+        },
+        "E": {
+          "pred": "X",
+          "conf": 96.10229730606079,
+          "is_correct": true,
+          "prep_ms": 0.7178000014391728,
+          "infer_ms": 0.7220800001960015
+        }
+      }
+    },
+    {
+      "filename": "Screenshot 2026-07-09 010136.png",
+      "gt": "Y",
+      "results": {
+        "A": {
+          "pred": "Y",
+          "conf": 99.78961944580078,
+          "is_correct": true,
+          "prep_ms": 0.2051999999821419,
+          "infer_ms": 0.7802200001606252
+        },
+        "B": {
+          "pred": "Y",
+          "conf": 99.78283047676086,
+          "is_correct": true,
+          "prep_ms": 0.36419999923964497,
+          "infer_ms": 0.7802200001606252
+        },
+        "C": {
+          "pred": "Y",
+          "conf": 60.14000177383423,
+          "is_correct": true,
+          "prep_ms": 0.29999999969732016,
+          "infer_ms": 0.7802200001606252
+        },
+        "D": {
+          "pred": "Y",
+          "conf": 99.0575909614563,
+          "is_correct": true,
+          "prep_ms": 0.3769999984797323,
+          "infer_ms": 0.7802200001606252
+        },
+        "E": {
+          "pred": "Y",
+          "conf": 98.43570590019226,
+          "is_correct": true,
+          "prep_ms": 0.5567999996856088,
+          "infer_ms": 0.7802200001606252
+        }
+      }
+    }
+  ]
+}

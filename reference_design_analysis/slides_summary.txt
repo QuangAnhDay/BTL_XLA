@@ -1,0 +1,865 @@
+Total slides: 14
+
+==================== SLIDE 01 ====================
+Shapes count: 10 | Types: {'AUTO_SHAPE (1)', 'PICTURE (13)'}
+Text shapes (8):
+  [PAGE] at box (892.5, 510.0, 21.0, 18.0): 01
+      run: '01' (sz=11.25, bld=False, font=Segoe UI, clr=#526985)
+  [TITLE] at box (48.0, 44.25, 555.0, 62.25): PANORAMA
+      run: 'PANORAMA' (sz=52.5, bld=True, font=Segoe UI, clr=#132E57)
+  [text-2] at box (48.0, 101.25, 555.0, 57.0): STITCHING
+      run: 'STITCHING' (sz=46.5, bld=True, font=Segoe UI, clr=#165DDE)
+  [text-3] at box (49.5, 161.25, 810.0, 33.75): Từ những ảnh rời, một khung cảnh chung
+      run: 'Từ những ảnh rời, một khung cảnh chung' (sz=21.0, bld=False, font=Segoe UI, clr=#132E57)
+  [text-4] at box (48.0, 478.5, 187.5, 22.5): THÀNH VIÊN
+      run: 'THÀNH VIÊN' (sz=13.5, bld=False, font=Segoe UI, clr=#526985)
+  [MEMBERS] at box (48.0, 499.5, 540.0, 22.5): Thành viên 1     Thành viên 2     Thành viên 3
+      run: 'Thành viên 1     Thành viên 2     Thành viên 3' (sz=15.0, bld=False, font=Segoe UI, clr=#132E57)
+  [text-5] at box (637.5, 478.5, 273.75, 22.5): GIẢNG VIÊN HƯỚNG DẪN
+      run: 'GIẢNG VIÊN HƯỚNG DẪN' (sz=13.5, bld=False, font=Segoe UI, clr=#526985)
+  [LECTURER] at box (637.5, 499.5, 251.25, 22.5): [Điền tên giảng viên]
+      run: '[Điền tên giảng viên]' (sz=15.0, bld=False, font=Segoe UI, clr=#132E57)
+Pictures (1):
+  [Picture 5] at box: (0.0, 217.5, 960.0, 243.75) | file: image.jpeg
+Other shapes (9):
+  [shape-1] type=AUTO_SHAPE (1) at (48.0, 33.0, 27.0, 3.75) fill=#165DDE line=Type(None)
+  [PAGE] type=AUTO_SHAPE (1) at (892.5, 510.0, 21.0, 18.0) fill=None line=Type(None)
+  [TITLE] type=AUTO_SHAPE (1) at (48.0, 44.25, 555.0, 62.25) fill=None line=Type(None)
+  [text-2] type=AUTO_SHAPE (1) at (48.0, 101.25, 555.0, 57.0) fill=None line=Type(None)
+  [text-3] type=AUTO_SHAPE (1) at (49.5, 161.25, 810.0, 33.75) fill=None line=Type(None)
+  [text-4] type=AUTO_SHAPE (1) at (48.0, 478.5, 187.5, 22.5) fill=None line=Type(None)
+  [MEMBERS] type=AUTO_SHAPE (1) at (48.0, 499.5, 540.0, 22.5) fill=None line=Type(None)
+  [text-5] type=AUTO_SHAPE (1) at (637.5, 478.5, 273.75, 22.5) fill=None line=Type(None)
+  [LECTURER] type=AUTO_SHAPE (1) at (637.5, 499.5, 251.25, 22.5) fill=None line=Type(None)
+
+==================== SLIDE 02 ====================
+Shapes count: 14 | Types: {'AUTO_SHAPE (1)', 'PICTURE (13)'}
+Text shapes (10):
+  [TITLE] at box (48.0, 48.75, 864.0, 48.75): Cùng một cảnh, nhiều khác biệt
+      run: 'Cùng một cảnh, nhiều khác biệt' (sz=31.5, bld=True, font=Segoe UI, clr=#132E57)
+  [SUBTITLE] at box (48.0, 101.25, 864.0, 33.75): Điều gì xảy ra nếu chỉ đặt các ảnh cạnh nhau?
+      run: 'Điều gì xảy ra nếu chỉ đặt các ảnh cạnh nhau?' (sz=16.5, bld=False, font=Segoe UI, clr=#526985)
+  [PAGE] at box (892.5, 510.0, 21.0, 18.0): 02
+      run: '02' (sz=11.25, bld=False, font=Segoe UI, clr=#526985)
+  [text-7] at box (628.5, 161.25, 41.25, 30.0): 01
+      run: '01' (sz=18.0, bld=True, font=Segoe UI, clr=#165DDE)
+  [text-8] at box (678.75, 161.25, 232.5, 48.75): Góc chụp khác nhau
+      run: 'Góc chụp khác nhau' (sz=18.75, bld=True, font=Segoe UI, clr=#132E57)
+  [text-9] at box (628.5, 224.25, 41.25, 30.0): 02
+      run: '02' (sz=18.0, bld=True, font=Segoe UI, clr=#165DDE)
+  [text-10] at box (678.75, 224.25, 232.5, 48.75): Độ sáng không đồng nhất
+      run: 'Độ sáng không đồng nhất' (sz=18.75, bld=True, font=Segoe UI, clr=#132E57)
+  [text-11] at box (628.5, 287.25, 41.25, 30.0): 03
+      run: '03' (sz=18.0, bld=True, font=Segoe UI, clr=#165DDE)
+  [text-12] at box (678.75, 287.25, 232.5, 48.75): Vùng giao nhau chưa khớp
+      run: 'Vùng giao nhau chưa khớp' (sz=18.75, bld=True, font=Segoe UI, clr=#132E57)
+  [text-13] at box (48.0, 369.75, 832.5, 22.5): Khi góc nhìn rộng, hình học còn có thể kéo giãn mạnh ở hai đầu
+      run: 'Khi góc nhìn rộng, hình học còn có thể kéo giãn mạnh ở hai đầu' (sz=13.5, bld=False, font=Segoe UI, clr=#526985)
+Pictures (3):
+  [Picture 4] at box: (48.0, 153.94, 262.5, 196.88) | file: image.jpeg
+  [Picture 5] at box: (328.5, 153.94, 262.5, 196.88) | file: image.jpeg
+  [Picture 13] at box: (48.44, 399.75, 863.11, 87.75) | file: image.jpeg
+Other shapes (11):
+  [shape-6] type=AUTO_SHAPE (1) at (48.0, 33.0, 27.0, 3.75) fill=#165DDE line=Type(None)
+  [TITLE] type=AUTO_SHAPE (1) at (48.0, 48.75, 864.0, 48.75) fill=None line=Type(None)
+  [SUBTITLE] type=AUTO_SHAPE (1) at (48.0, 101.25, 864.0, 33.75) fill=None line=Type(None)
+  [PAGE] type=AUTO_SHAPE (1) at (892.5, 510.0, 21.0, 18.0) fill=None line=Type(None)
+  [text-7] type=AUTO_SHAPE (1) at (628.5, 161.25, 41.25, 30.0) fill=None line=Type(None)
+  [text-8] type=AUTO_SHAPE (1) at (678.75, 161.25, 232.5, 48.75) fill=None line=Type(None)
+  [text-9] type=AUTO_SHAPE (1) at (628.5, 224.25, 41.25, 30.0) fill=None line=Type(None)
+  [text-10] type=AUTO_SHAPE (1) at (678.75, 224.25, 232.5, 48.75) fill=None line=Type(None)
+  [text-11] type=AUTO_SHAPE (1) at (628.5, 287.25, 41.25, 30.0) fill=None line=Type(None)
+  [text-12] type=AUTO_SHAPE (1) at (678.75, 287.25, 232.5, 48.75) fill=None line=Type(None)
+  [text-13] type=AUTO_SHAPE (1) at (48.0, 369.75, 832.5, 22.5) fill=None line=Type(None)
+
+==================== SLIDE 03 ====================
+Shapes count: 23 | Types: {'AUTO_SHAPE (1)', 'FREEFORM (5)', 'MEDIA (16)', 'PICTURE (13)'}
+Text shapes (14):
+  [TITLE] at box (48.0, 48.75, 864.0, 48.75): Một pipeline, ba bài toán chính
+      run: 'Một pipeline, ba bài toán chính' (sz=31.5, bld=True, font=Segoe UI, clr=#132E57)
+  [SUBTITLE] at box (48.0, 101.25, 864.0, 33.75): Tìm tương ứng. Căn chỉnh hình học. Hoàn thiện vùng nối.
+      run: 'Tìm tương ứng. Căn chỉnh hình học. Hoàn thiện vùng nối.' (sz=16.5, bld=False, font=Segoe UI, clr=#526985)
+  [PAGE] at box (892.5, 510.0, 21.0, 18.0): 03
+      run: '03' (sz=11.25, bld=False, font=Segoe UI, clr=#526985)
+  [text-17] at box (52.5, 440.25, 22.5, 22.5): 01
+      run: '01' (sz=11.25, bld=True, font=Segoe UI, clr=#FFFFFF)
+  [PIPE_LABEL_0] at box (48.0, 470.25, 166.5, 39.75): Chuẩn bị ảnh
+      run: 'Chuẩn bị ảnh' (sz=15.0, bld=True, font=Segoe UI, clr=#132E57)
+  [text-19] at box (225.75, 440.25, 22.5, 22.5): 02
+      run: '02' (sz=11.25, bld=True, font=Segoe UI, clr=#FFFFFF)
+  [PIPE_LABEL_1] at box (221.25, 470.25, 166.5, 39.75): Tìm đặc trưng
+      run: 'Tìm đặc trưng' (sz=15.0, bld=True, font=Segoe UI, clr=#132E57)
+  [text-21] at box (399.0, 440.25, 22.5, 22.5): 03
+      run: '03' (sz=11.25, bld=True, font=Segoe UI, clr=#FFFFFF)
+  [PIPE_LABEL_2] at box (394.5, 470.25, 166.5, 39.75): Ước lượng hình học
+      run: 'Ước lượng hình học' (sz=15.0, bld=True, font=Segoe UI, clr=#132E57)
+  [text-23] at box (572.25, 440.25, 22.5, 22.5): 04
+      run: '04' (sz=11.25, bld=True, font=Segoe UI, clr=#FFFFFF)
+  [PIPE_LABEL_3] at box (567.75, 470.25, 166.5, 39.75): Chọn phép chiếu
+      run: 'Chọn phép chiếu' (sz=15.0, bld=True, font=Segoe UI, clr=#132E57)
+  [text-25] at box (745.5, 440.25, 22.5, 22.5): 05
+      run: '05' (sz=11.25, bld=True, font=Segoe UI, clr=#FFFFFF)
+  [PIPE_LABEL_4] at box (741.0, 470.25, 166.5, 39.75): Trộn và xuất ảnh
+      run: 'Trộn và xuất ảnh' (sz=15.0, bld=True, font=Segoe UI, clr=#132E57)
+  [text-26] at box (48.0, 510.75, 825.0, 22.5): OpenCV hỗ trợ SIFT/ORB; các khâu lõi ghép ảnh được tự cài đặt
+      run: 'OpenCV hỗ trợ SIFT/ORB; các khâu lõi ghép ảnh được tự cài đặt' (sz=13.5, bld=False, font=Segoe UI, clr=#526985)
+Pictures (1):
+  [VIDEO_PIPELINE_POSTER] at box: (76.55, 145.5, 806.9, 292.5) | file: image.png
+Other shapes (21):
+  [shape-14] type=AUTO_SHAPE (1) at (48.0, 33.0, 27.0, 3.75) fill=#165DDE line=Type(None)
+  [TITLE] type=AUTO_SHAPE (1) at (48.0, 48.75, 864.0, 48.75) fill=None line=Type(None)
+  [SUBTITLE] type=AUTO_SHAPE (1) at (48.0, 101.25, 864.0, 33.75) fill=None line=Type(None)
+  [PAGE] type=AUTO_SHAPE (1) at (892.5, 510.0, 21.0, 18.0) fill=None line=Type(None)
+  [line-15] type=FREEFORM (5) at (60.0, 450.75, 697.5, 0.08) fill=None line=#165DDE
+  [dot-16] type=AUTO_SHAPE (1) at (48.75, 439.5, 22.5, 22.5) fill=#165DDE line=Type(None)
+  [text-17] type=AUTO_SHAPE (1) at (52.5, 440.25, 22.5, 22.5) fill=None line=Type(None)
+  [PIPE_LABEL_0] type=AUTO_SHAPE (1) at (48.0, 470.25, 166.5, 39.75) fill=None line=Type(None)
+  [dot-18] type=AUTO_SHAPE (1) at (222.0, 439.5, 22.5, 22.5) fill=#165DDE line=Type(None)
+  [text-19] type=AUTO_SHAPE (1) at (225.75, 440.25, 22.5, 22.5) fill=None line=Type(None)
+  [PIPE_LABEL_1] type=AUTO_SHAPE (1) at (221.25, 470.25, 166.5, 39.75) fill=None line=Type(None)
+  [dot-20] type=AUTO_SHAPE (1) at (395.25, 439.5, 22.5, 22.5) fill=#165DDE line=Type(None)
+  [text-21] type=AUTO_SHAPE (1) at (399.0, 440.25, 22.5, 22.5) fill=None line=Type(None)
+  [PIPE_LABEL_2] type=AUTO_SHAPE (1) at (394.5, 470.25, 166.5, 39.75) fill=None line=Type(None)
+  [dot-22] type=AUTO_SHAPE (1) at (568.5, 439.5, 22.5, 22.5) fill=#165DDE line=Type(None)
+  [text-23] type=AUTO_SHAPE (1) at (572.25, 440.25, 22.5, 22.5) fill=None line=Type(None)
+  [PIPE_LABEL_3] type=AUTO_SHAPE (1) at (567.75, 470.25, 166.5, 39.75) fill=None line=Type(None)
+  [dot-24] type=AUTO_SHAPE (1) at (741.75, 439.5, 22.5, 22.5) fill=#165DDE line=Type(None)
+  [text-25] type=AUTO_SHAPE (1) at (745.5, 440.25, 22.5, 22.5) fill=None line=Type(None)
+  [PIPE_LABEL_4] type=AUTO_SHAPE (1) at (741.0, 470.25, 166.5, 39.75) fill=None line=Type(None)
+  [text-26] type=AUTO_SHAPE (1) at (48.0, 510.75, 825.0, 22.5) fill=None line=Type(None)
+
+==================== SLIDE 04 ====================
+Shapes count: 23 | Types: {'AUTO_SHAPE (1)', 'FREEFORM (5)', 'PICTURE (13)'}
+Text shapes (10):
+  [TITLE] at box (48.0, 48.75, 864.0, 48.75): Phân tích ảnh nhỏ, dựng từ ảnh gốc
+      run: 'Phân tích ảnh nhỏ, dựng từ ảnh gốc' (sz=31.5, bld=True, font=Segoe UI, clr=#132E57)
+  [SUBTITLE] at box (48.0, 101.25, 864.0, 33.75): Giảm chi phí căn chỉnh và giữ dữ liệu nguồn cho bước xuất
+      run: 'Giảm chi phí căn chỉnh và giữ dữ liệu nguồn cho bước xuất' (sz=16.5, bld=False, font=Segoe UI, clr=#526985)
+  [PAGE] at box (892.5, 510.0, 21.0, 18.0): 04
+      run: '04' (sz=11.25, bld=False, font=Segoe UI, clr=#526985)
+  [text-28] at box (48.0, 345.0, 165.0, 22.5): ẢNH ĐẦU VÀO
+      run: 'ẢNH ĐẦU VÀO' (sz=13.5, bld=False, font=Segoe UI, clr=#526985)
+  [REG_TITLE] at box (310.5, 162.0, 234.0, 31.5): Bản phục vụ căn chỉnh
+      run: 'Bản phục vụ căn chỉnh' (sz=19.5, bld=True, font=Segoe UI, clr=#132E57)
+  [text-34] at box (310.5, 199.5, 228.75, 43.5): Đặc trưng, matching, hình học
+      run: 'Đặc trưng, matching, hình học' (sz=16.5, bld=False, font=Segoe UI, clr=#526985)
+  [ORIG_TITLE] at box (310.5, 329.25, 232.5, 31.5): Ảnh gốc được giữ lại
+      run: 'Ảnh gốc được giữ lại' (sz=19.5, bld=True, font=Segoe UI, clr=#132E57)
+  [text-36] at box (310.5, 367.5, 225.0, 43.5): Lấy mẫu khi dựng panorama
+      run: 'Lấy mẫu khi dựng panorama' (sz=16.5, bld=False, font=Segoe UI, clr=#526985)
+  [text-41] at box (648.75, 320.25, 262.5, 30.0): Panorama đầu ra
+      run: 'Panorama đầu ra' (sz=18.75, bld=True, font=Segoe UI, clr=#132E57)
+  [text-42] at box (48.0, 468.75, 825.0, 30.0): Tọa độ phân tích phải được quy đổi chính xác về ảnh gốc
+      run: 'Tọa độ phân tích phải được quy đổi chính xác về ảnh gốc' (sz=18.75, bld=True, font=Segoe UI, clr=#165DDE)
+Pictures (2):
+  [Picture 4] at box: (48.0, 205.5, 165.0, 123.75) | file: image.jpeg
+  [Picture 20] at box: (648.75, 233.3, 262.5, 66.65) | file: image.jpeg
+Other shapes (21):
+  [shape-27] type=AUTO_SHAPE (1) at (48.0, 33.0, 27.0, 3.75) fill=#165DDE line=Type(None)
+  [TITLE] type=AUTO_SHAPE (1) at (48.0, 48.75, 864.0, 48.75) fill=None line=Type(None)
+  [SUBTITLE] type=AUTO_SHAPE (1) at (48.0, 101.25, 864.0, 33.75) fill=None line=Type(None)
+  [PAGE] type=AUTO_SHAPE (1) at (892.5, 510.0, 21.0, 18.0) fill=None line=Type(None)
+  [text-28] type=AUTO_SHAPE (1) at (48.0, 345.0, 165.0, 22.5) fill=None line=Type(None)
+  [line-29] type=FREEFORM (5) at (231.0, 264.0, 32.25, 0.08) fill=None line=#165DDE
+  [line-30] type=FREEFORM (5) at (263.25, 189.0, 0.08, 180.0) fill=None line=#165DDE
+  [line-31] type=FREEFORM (5) at (263.25, 189.0, 29.25, 0.08) fill=None line=#165DDE
+  [line-32] type=FREEFORM (5) at (263.25, 369.0, 29.25, 0.08) fill=None line=#165DDE
+  [shape-33] type=AUTO_SHAPE (1) at (292.5, 144.75, 270.0, 108.75) fill=#EAF2FF line=Type(None)
+  [REG_TITLE] type=AUTO_SHAPE (1) at (310.5, 162.0, 234.0, 31.5) fill=None line=Type(None)
+  [text-34] type=AUTO_SHAPE (1) at (310.5, 199.5, 228.75, 43.5) fill=None line=Type(None)
+  [shape-35] type=AUTO_SHAPE (1) at (292.5, 311.25, 270.0, 108.75) fill=#F3F7FC line=Type(None)
+  [ORIG_TITLE] type=AUTO_SHAPE (1) at (310.5, 329.25, 232.5, 31.5) fill=None line=Type(None)
+  [text-36] type=AUTO_SHAPE (1) at (310.5, 367.5, 225.0, 43.5) fill=None line=Type(None)
+  [line-37] type=FREEFORM (5) at (562.5, 198.75, 50.25, 0.08) fill=None line=#165DDE
+  [line-38] type=FREEFORM (5) at (562.5, 366.0, 50.25, 0.08) fill=None line=#165DDE
+  [line-39] type=FREEFORM (5) at (612.75, 198.75, 0.08, 167.25) fill=None line=#165DDE
+  [line-40] type=FREEFORM (5) at (612.75, 282.0, 33.0, 0.08) fill=None line=#165DDE
+  [text-41] type=AUTO_SHAPE (1) at (648.75, 320.25, 262.5, 30.0) fill=None line=Type(None)
+  [text-42] type=AUTO_SHAPE (1) at (48.0, 468.75, 825.0, 30.0) fill=None line=Type(None)
+
+==================== SLIDE 05 ====================
+Shapes count: 111 | Types: {'AUTO_SHAPE (1)', 'FREEFORM (5)', 'PICTURE (13)'}
+Text shapes (8):
+  [TITLE] at box (48.0, 48.75, 864.0, 48.75): Nhận ra cùng một chi tiết ở nhiều ảnh
+      run: 'Nhận ra cùng một chi tiết ở nhiều ảnh' (sz=31.5, bld=True, font=Segoe UI, clr=#132E57)
+  [SUBTITLE] at box (48.0, 101.25, 864.0, 33.75): SIFT/ORB tạo điểm đặc trưng và mô tả vùng lân cận
+      run: 'SIFT/ORB tạo điểm đặc trưng và mô tả vùng lân cận' (sz=16.5, bld=False, font=Segoe UI, clr=#526985)
+  [PAGE] at box (892.5, 510.0, 21.0, 18.0): 05
+      run: '05' (sz=11.25, bld=False, font=Segoe UI, clr=#526985)
+  [KEYPOINT_TITLE] at box (559.5, 159.75, 315.0, 33.0): Điểm đặc trưng
+      run: 'Điểm đặc trưng' (sz=22.5, bld=True, font=Segoe UI, clr=#165DDE)
+  [text-144] at box (559.5, 202.5, 315.0, 62.25): Vị trí có thể nhận biết // và đối chiếu giữa các ảnh
+      run: 'Vị trí có thể nhận biết' (sz=18.75, bld=False, font=Segoe UI, clr=#132E57)
+      run: 'và đối chiếu giữa các ảnh' (sz=18.75, bld=False, font=Segoe UI, clr=#132E57)
+  [DESC_TITLE] at box (559.5, 315.0, 315.0, 33.0): Descriptor
+      run: 'Descriptor' (sz=22.5, bld=True, font=Segoe UI, clr=#165DDE)
+  [text-146] at box (559.5, 357.75, 315.0, 62.25): Biểu diễn vùng lân cận // để đo mức độ tương đồng
+      run: 'Biểu diễn vùng lân cận' (sz=18.75, bld=False, font=Segoe UI, clr=#132E57)
+      run: 'để đo mức độ tương đồng' (sz=18.75, bld=False, font=Segoe UI, clr=#132E57)
+  [text-147] at box (559.5, 453.0, 345.0, 22.5): Hiển thị chọn lọc điểm từ SIFT trên dữ liệu thật
+      run: 'Hiển thị chọn lọc điểm từ SIFT trên dữ liệu thật' (sz=13.5, bld=False, font=Segoe UI, clr=#526985)
+Pictures (1):
+  [Picture 4] at box: (48.0, 142.5, 465.0, 348.75) | file: image.jpeg
+Other shapes (110):
+  [shape-43] type=AUTO_SHAPE (1) at (48.0, 33.0, 27.0, 3.75) fill=#165DDE line=Type(None)
+  [TITLE] type=AUTO_SHAPE (1) at (48.0, 48.75, 864.0, 48.75) fill=None line=Type(None)
+  [SUBTITLE] type=AUTO_SHAPE (1) at (48.0, 101.25, 864.0, 33.75) fill=None line=Type(None)
+  [PAGE] type=AUTO_SHAPE (1) at (892.5, 510.0, 21.0, 18.0) fill=None line=Type(None)
+  [dot-44] type=AUTO_SHAPE (1) at (495.5, 217.04, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-45] type=AUTO_SHAPE (1) at (415.28, 213.52, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-46] type=AUTO_SHAPE (1) at (317.86, 142.28, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-47] type=AUTO_SHAPE (1) at (482.36, 199.55, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-48] type=AUTO_SHAPE (1) at (418.05, 207.43, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-49] type=AUTO_SHAPE (1) at (248.44, 165.26, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-50] type=AUTO_SHAPE (1) at (226.87, 203.82, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-51] type=AUTO_SHAPE (1) at (495.08, 233.95, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-52] type=AUTO_SHAPE (1) at (463.16, 198.91, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-53] type=AUTO_SHAPE (1) at (373.51, 153.14, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-54] type=AUTO_SHAPE (1) at (250.88, 262.61, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-55] type=AUTO_SHAPE (1) at (486.22, 215.29, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-56] type=AUTO_SHAPE (1) at (429.24, 182.39, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-57] type=AUTO_SHAPE (1) at (175.34, 421.74, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-58] type=AUTO_SHAPE (1) at (452.86, 184.47, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-59] type=AUTO_SHAPE (1) at (277.63, 144.13, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-60] type=AUTO_SHAPE (1) at (427.62, 361.84, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-61] type=AUTO_SHAPE (1) at (73.47, 346.43, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-62] type=AUTO_SHAPE (1) at (501.99, 197.54, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-63] type=AUTO_SHAPE (1) at (467.77, 191.65, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-64] type=AUTO_SHAPE (1) at (465.88, 276.45, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-65] type=AUTO_SHAPE (1) at (456.02, 174.39, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-66] type=AUTO_SHAPE (1) at (414.12, 151.48, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-67] type=AUTO_SHAPE (1) at (498.76, 213.34, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-68] type=AUTO_SHAPE (1) at (188.74, 368.44, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-69] type=AUTO_SHAPE (1) at (246.2, 147.79, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-70] type=AUTO_SHAPE (1) at (334.55, 343.8, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-71] type=AUTO_SHAPE (1) at (242.37, 182.48, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-72] type=AUTO_SHAPE (1) at (482.32, 223.42, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-73] type=AUTO_SHAPE (1) at (460.64, 162.14, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-74] type=AUTO_SHAPE (1) at (147.46, 214.72, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-75] type=AUTO_SHAPE (1) at (467.04, 240.54, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-76] type=AUTO_SHAPE (1) at (135.84, 201.99, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-77] type=AUTO_SHAPE (1) at (454.47, 236.52, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-78] type=AUTO_SHAPE (1) at (326.24, 174.2, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-79] type=AUTO_SHAPE (1) at (491.36, 219.05, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-80] type=AUTO_SHAPE (1) at (495.43, 226.82, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-81] type=AUTO_SHAPE (1) at (410.86, 245.8, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-82] type=AUTO_SHAPE (1) at (319.02, 156.75, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-83] type=AUTO_SHAPE (1) at (459.56, 168.95, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-84] type=AUTO_SHAPE (1) at (216.59, 341.1, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-85] type=AUTO_SHAPE (1) at (501.19, 227.93, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-86] type=AUTO_SHAPE (1) at (69.74, 197.29, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-87] type=AUTO_SHAPE (1) at (108.32, 247.7, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-88] type=AUTO_SHAPE (1) at (451.19, 276.97, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-89] type=AUTO_SHAPE (1) at (474.94, 269.42, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-90] type=AUTO_SHAPE (1) at (463.99, 276.53, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-91] type=AUTO_SHAPE (1) at (210.56, 260.61, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-92] type=AUTO_SHAPE (1) at (471.48, 267.14, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-93] type=AUTO_SHAPE (1) at (482.97, 174.9, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-94] type=AUTO_SHAPE (1) at (441.8, 154.05, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-95] type=AUTO_SHAPE (1) at (96.86, 349.72, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-96] type=AUTO_SHAPE (1) at (59.25, 275.71, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-97] type=AUTO_SHAPE (1) at (429.84, 205.49, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-98] type=AUTO_SHAPE (1) at (211.22, 142.86, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-99] type=AUTO_SHAPE (1) at (283.15, 345.86, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-100] type=AUTO_SHAPE (1) at (215.68, 153.95, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-101] type=AUTO_SHAPE (1) at (194.9, 151.6, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-102] type=AUTO_SHAPE (1) at (441.53, 387.39, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-103] type=AUTO_SHAPE (1) at (71.74, 299.32, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-104] type=AUTO_SHAPE (1) at (267.22, 275.38, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-105] type=AUTO_SHAPE (1) at (467.13, 215.27, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-106] type=AUTO_SHAPE (1) at (339.12, 206.14, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-107] type=AUTO_SHAPE (1) at (219.22, 222.0, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-108] type=AUTO_SHAPE (1) at (257.76, 146.68, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-109] type=AUTO_SHAPE (1) at (436.2, 199.92, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-110] type=AUTO_SHAPE (1) at (409.61, 151.47, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-111] type=AUTO_SHAPE (1) at (208.59, 236.74, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-112] type=AUTO_SHAPE (1) at (68.17, 274.91, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-113] type=AUTO_SHAPE (1) at (391.62, 167.06, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-114] type=AUTO_SHAPE (1) at (255.16, 152.26, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-115] type=AUTO_SHAPE (1) at (70.7, 321.1, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-116] type=AUTO_SHAPE (1) at (266.46, 218.32, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-117] type=AUTO_SHAPE (1) at (477.41, 252.23, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-118] type=AUTO_SHAPE (1) at (504.19, 190.09, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-119] type=AUTO_SHAPE (1) at (439.01, 183.89, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-120] type=AUTO_SHAPE (1) at (206.31, 236.06, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-121] type=AUTO_SHAPE (1) at (222.58, 263.83, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-122] type=AUTO_SHAPE (1) at (245.11, 285.55, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-123] type=AUTO_SHAPE (1) at (194.51, 243.07, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-124] type=AUTO_SHAPE (1) at (489.12, 224.17, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-125] type=AUTO_SHAPE (1) at (497.46, 341.76, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-126] type=AUTO_SHAPE (1) at (314.16, 338.45, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-127] type=AUTO_SHAPE (1) at (82.45, 243.42, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-128] type=AUTO_SHAPE (1) at (178.0, 413.58, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-129] type=AUTO_SHAPE (1) at (217.59, 175.18, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-130] type=AUTO_SHAPE (1) at (489.99, 295.95, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-131] type=AUTO_SHAPE (1) at (507.61, 227.59, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-132] type=AUTO_SHAPE (1) at (242.58, 372.41, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-133] type=AUTO_SHAPE (1) at (255.68, 279.0, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-134] type=AUTO_SHAPE (1) at (138.61, 245.57, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-135] type=AUTO_SHAPE (1) at (442.98, 173.52, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-136] type=AUTO_SHAPE (1) at (409.71, 153.11, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-137] type=AUTO_SHAPE (1) at (136.8, 281.88, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-138] type=AUTO_SHAPE (1) at (471.76, 245.06, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-139] type=AUTO_SHAPE (1) at (435.2, 154.36, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-140] type=AUTO_SHAPE (1) at (260.87, 369.15, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-141] type=AUTO_SHAPE (1) at (305.45, 157.65, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-142] type=AUTO_SHAPE (1) at (440.29, 164.36, 5.25, 5.25) fill=None line=#23A8CE
+  [dot-143] type=AUTO_SHAPE (1) at (214.2, 148.08, 5.25, 5.25) fill=None line=#23A8CE
+  [KEYPOINT_TITLE] type=AUTO_SHAPE (1) at (559.5, 159.75, 315.0, 33.0) fill=None line=Type(None)
+  [text-144] type=AUTO_SHAPE (1) at (559.5, 202.5, 315.0, 62.25) fill=None line=Type(None)
+  [line-145] type=FREEFORM (5) at (559.5, 291.0, 348.0, 0.08) fill=None line=#D8E4F2
+  [DESC_TITLE] type=AUTO_SHAPE (1) at (559.5, 315.0, 315.0, 33.0) fill=None line=Type(None)
+  [text-146] type=AUTO_SHAPE (1) at (559.5, 357.75, 315.0, 62.25) fill=None line=Type(None)
+  [text-147] type=AUTO_SHAPE (1) at (559.5, 453.0, 345.0, 22.5) fill=None line=Type(None)
+
+==================== SLIDE 06 ====================
+Shapes count: 74 | Types: {'AUTO_SHAPE (1)', 'FREEFORM (5)', 'PICTURE (13)'}
+Text shapes (5):
+  [TITLE] at box (48.0, 48.75, 864.0, 48.75): Giống nhau chưa có nghĩa là khớp đúng
+      run: 'Giống nhau chưa có nghĩa là khớp đúng' (sz=31.5, bld=True, font=Segoe UI, clr=#132E57)
+  [SUBTITLE] at box (48.0, 101.25, 864.0, 33.75): Matching KNN, Lowe ratio test và kiểm tra hai chiều
+      run: 'Matching KNN, Lowe ratio test và kiểm tra hai chiều' (sz=16.5, bld=False, font=Segoe UI, clr=#526985)
+  [PAGE] at box (892.5, 510.0, 21.0, 18.0): 06
+      run: '06' (sz=11.25, bld=False, font=Segoe UI, clr=#526985)
+  [RATIO_FORMULA] at box (48.0, 457.5, 277.5, 37.5): d₁ < 0,75 d₂
+      run: 'd₁ < 0,75 d₂' (sz=26.25, bld=True, font=Segoe UI, clr=#165DDE)
+  [text-215] at box (354.0, 459.75, 551.25, 48.0): Ứng viên tốt nhất phải đủ khác biệt // so với ứng viên thứ hai
+      run: 'Ứng viên tốt nhất phải đủ khác biệt' (sz=17.25, bld=False, font=Segoe UI, clr=#132E57)
+      run: 'so với ứng viên thứ hai' (sz=17.25, bld=False, font=Segoe UI, clr=#132E57)
+Pictures (2):
+  [Picture 4] at box: (48.0, 151.5, 375.0, 281.25) | file: image.jpeg
+  [Picture 5] at box: (537.0, 151.5, 375.0, 281.25) | file: image.jpeg
+Other shapes (72):
+  [shape-148] type=AUTO_SHAPE (1) at (48.0, 33.0, 27.0, 3.75) fill=#165DDE line=Type(None)
+  [TITLE] type=AUTO_SHAPE (1) at (48.0, 48.75, 864.0, 48.75) fill=None line=Type(None)
+  [SUBTITLE] type=AUTO_SHAPE (1) at (48.0, 101.25, 864.0, 33.75) fill=None line=Type(None)
+  [PAGE] type=AUTO_SHAPE (1) at (892.5, 510.0, 21.0, 18.0) fill=None line=Type(None)
+  [line-149] type=FREEFORM (5) at (344.18, 291.18, 327.51, 2.6) fill=None line=#23A8CE
+  [dot-150] type=AUTO_SHAPE (1) at (341.93, 288.93, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [dot-151] type=AUTO_SHAPE (1) at (669.44, 291.53, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [line-152] type=FREEFORM (5) at (392.17, 247.51, 325.54, 7.2) fill=None line=#23A8CE
+  [dot-153] type=AUTO_SHAPE (1) at (389.92, 245.26, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [dot-154] type=AUTO_SHAPE (1) at (715.46, 252.46, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [line-155] type=FREEFORM (5) at (351.31, 315.89, 326.12, 2.07) fill=None line=#23A8CE
+  [dot-156] type=AUTO_SHAPE (1) at (349.06, 313.64, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [dot-157] type=AUTO_SHAPE (1) at (675.19, 315.71, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [line-158] type=FREEFORM (5) at (343.73, 304.34, 327.0, 2.15) fill=None line=#23A8CE
+  [dot-159] type=AUTO_SHAPE (1) at (341.48, 302.09, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [dot-160] type=AUTO_SHAPE (1) at (668.48, 304.24, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [line-161] type=FREEFORM (5) at (390.65, 265.94, 324.95, 5.77) fill=None line=#23A8CE
+  [dot-162] type=AUTO_SHAPE (1) at (388.4, 263.69, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [dot-163] type=AUTO_SHAPE (1) at (713.35, 269.46, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [line-164] type=FREEFORM (5) at (223.7, 180.91, 323.43, 11.07) fill=None line=#23A8CE
+  [dot-165] type=AUTO_SHAPE (1) at (221.45, 189.73, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [dot-166] type=AUTO_SHAPE (1) at (544.89, 178.66, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [line-167] type=FREEFORM (5) at (360.41, 284.75, 326.66, 3.36) fill=None line=#23A8CE
+  [dot-168] type=AUTO_SHAPE (1) at (358.16, 282.5, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [dot-169] type=AUTO_SHAPE (1) at (684.82, 285.86, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [line-170] type=FREEFORM (5) at (352.32, 164.95, 332.04, 6.88) fill=None line=#23A8CE
+  [dot-171] type=AUTO_SHAPE (1) at (350.07, 162.7, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [dot-172] type=AUTO_SHAPE (1) at (682.1, 169.58, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [line-173] type=FREEFORM (5) at (337.21, 180.43, 332.67, 4.26) fill=None line=#23A8CE
+  [dot-174] type=AUTO_SHAPE (1) at (334.96, 178.18, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [dot-175] type=AUTO_SHAPE (1) at (667.63, 182.44, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [line-176] type=FREEFORM (5) at (415.37, 233.92, 322.65, 9.63) fill=None line=#23A8CE
+  [dot-177] type=AUTO_SHAPE (1) at (413.12, 231.67, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [dot-178] type=AUTO_SHAPE (1) at (735.78, 241.3, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [line-179] type=FREEFORM (5) at (405.68, 221.57, 324.54, 9.67) fill=None line=#23A8CE
+  [dot-180] type=AUTO_SHAPE (1) at (403.43, 219.32, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [dot-181] type=AUTO_SHAPE (1) at (727.97, 228.98, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [line-182] type=FREEFORM (5) at (239.81, 259.14, 322.82, 3.85) fill=None line=#23A8CE
+  [dot-183] type=AUTO_SHAPE (1) at (237.56, 260.74, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [dot-184] type=AUTO_SHAPE (1) at (560.37, 256.89, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [line-185] type=FREEFORM (5) at (405.35, 286.44, 321.95, 5.06) fill=None line=#23A8CE
+  [dot-186] type=AUTO_SHAPE (1) at (403.1, 284.19, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [dot-187] type=AUTO_SHAPE (1) at (725.05, 289.25, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [line-188] type=FREEFORM (5) at (343.16, 160.57, 333.31, 5.82) fill=None line=#23A8CE
+  [dot-189] type=AUTO_SHAPE (1) at (340.91, 158.32, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [dot-190] type=AUTO_SHAPE (1) at (674.22, 164.14, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [line-191] type=FREEFORM (5) at (418.14, 262.26, 320.63, 7.59) fill=None line=#23A8CE
+  [dot-192] type=AUTO_SHAPE (1) at (415.89, 260.01, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [dot-193] type=AUTO_SHAPE (1) at (736.52, 267.6, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [line-194] type=FREEFORM (5) at (292.81, 274.67, 328.07, 0.28) fill=None line=#23A8CE
+  [dot-195] type=AUTO_SHAPE (1) at (290.56, 272.42, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [dot-196] type=AUTO_SHAPE (1) at (618.63, 272.71, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [line-197] type=FREEFORM (5) at (391.82, 221.41, 326.49, 8.79) fill=None line=#23A8CE
+  [dot-198] type=AUTO_SHAPE (1) at (389.57, 219.16, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [dot-199] type=AUTO_SHAPE (1) at (716.06, 227.95, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [line-200] type=FREEFORM (5) at (226.31, 165.07, 324.52, 12.07) fill=None line=#23A8CE
+  [dot-201] type=AUTO_SHAPE (1) at (224.06, 174.89, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [dot-202] type=AUTO_SHAPE (1) at (548.58, 162.82, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [line-203] type=FREEFORM (5) at (407.2, 238.74, 323.34, 9.39) fill=None line=#23A8CE
+  [dot-204] type=AUTO_SHAPE (1) at (404.95, 236.49, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [dot-205] type=AUTO_SHAPE (1) at (728.29, 245.87, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [line-206] type=FREEFORM (5) at (234.89, 154.03, 326.33, 11.86) fill=None line=#23A8CE
+  [dot-207] type=AUTO_SHAPE (1) at (232.64, 163.63, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [dot-208] type=AUTO_SHAPE (1) at (558.96, 151.78, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [line-209] type=FREEFORM (5) at (407.59, 235.56, 323.32, 9.1) fill=None line=#23A8CE
+  [dot-210] type=AUTO_SHAPE (1) at (405.34, 233.31, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [dot-211] type=AUTO_SHAPE (1) at (728.66, 242.4, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [line-212] type=FREEFORM (5) at (413.59, 230.99, 323.07, 9.87) fill=None line=#23A8CE
+  [dot-213] type=AUTO_SHAPE (1) at (411.34, 228.74, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [dot-214] type=AUTO_SHAPE (1) at (734.41, 238.61, 4.5, 4.5) fill=#165DDE line=#FFFFFF
+  [RATIO_FORMULA] type=AUTO_SHAPE (1) at (48.0, 457.5, 277.5, 37.5) fill=None line=Type(None)
+  [text-215] type=AUTO_SHAPE (1) at (354.0, 459.75, 551.25, 48.0) fill=None line=Type(None)
+
+==================== SLIDE 07 ====================
+Shapes count: 13 | Types: {'AUTO_SHAPE (1)', 'MEDIA (16)', 'PICTURE (13)'}
+Text shapes (10):
+  [TITLE] at box (48.0, 48.75, 864.0, 48.75): Từ cặp điểm đến phép biến đổi
+      run: 'Từ cặp điểm đến phép biến đổi' (sz=31.5, bld=True, font=Segoe UI, clr=#132E57)
+  [SUBTITLE] at box (48.0, 101.25, 864.0, 33.75): Normalized DLT ước lượng ma trận homography
+      run: 'Normalized DLT ước lượng ma trận homography' (sz=16.5, bld=False, font=Segoe UI, clr=#526985)
+  [PAGE] at box (892.5, 510.0, 21.0, 18.0): 07
+      run: '07' (sz=11.25, bld=False, font=Segoe UI, clr=#526985)
+  [H_EQUATION] at box (48.0, 166.5, 307.5, 63.75): x′ ∼ Hx
+      run: 'x′ ∼ Hx' (sz=47.25, bld=True, font=Segoe UI, clr=#165DDE)
+  [text-217] at box (49.5, 243.75, 307.5, 37.5): H là ma trận 3 × 3
+      run: 'H là ma trận 3 × 3' (sz=20.25, bld=True, font=Segoe UI, clr=#132E57)
+  [text-218] at box (49.5, 292.5, 307.5, 63.75): Tối thiểu bốn cặp điểm // ở cấu hình không suy biến
+      run: 'Tối thiểu bốn cặp điểm' (sz=18.75, bld=False, font=Segoe UI, clr=#526985)
+      run: 'ở cấu hình không suy biến' (sz=18.75, bld=False, font=Segoe UI, clr=#526985)
+  [text-219] at box (378.75, 452.25, 532.5, 22.5): Minh họa phép biến đổi trên mặt phẳng
+      run: 'Minh họa phép biến đổi trên mặt phẳng' (sz=13.5, bld=False, font=Segoe UI, clr=#526985)
+  [DLT_0] at box (49.5, 492.75, 288.75, 24.75): Chuẩn hóa tọa độ
+      run: 'Chuẩn hóa tọa độ' (sz=15.75, bld=True, font=Segoe UI, clr=#165DDE)
+  [DLT_1] at box (355.5, 492.75, 288.75, 24.75): Lập hệ DLT
+      run: 'Lập hệ DLT' (sz=15.75, bld=True, font=Segoe UI, clr=#165DDE)
+  [DLT_2] at box (661.5, 492.75, 288.75, 24.75): Giải bằng SVD
+      run: 'Giải bằng SVD' (sz=15.75, bld=True, font=Segoe UI, clr=#165DDE)
+Pictures (1):
+  [VIDEO_HOMOGRAPHY_POSTER] at box: (378.75, 142.73, 532.5, 299.53) | file: image.png
+Other shapes (11):
+  [shape-216] type=AUTO_SHAPE (1) at (48.0, 33.0, 27.0, 3.75) fill=#165DDE line=Type(None)
+  [TITLE] type=AUTO_SHAPE (1) at (48.0, 48.75, 864.0, 48.75) fill=None line=Type(None)
+  [SUBTITLE] type=AUTO_SHAPE (1) at (48.0, 101.25, 864.0, 33.75) fill=None line=Type(None)
+  [PAGE] type=AUTO_SHAPE (1) at (892.5, 510.0, 21.0, 18.0) fill=None line=Type(None)
+  [H_EQUATION] type=AUTO_SHAPE (1) at (48.0, 166.5, 307.5, 63.75) fill=None line=Type(None)
+  [text-217] type=AUTO_SHAPE (1) at (49.5, 243.75, 307.5, 37.5) fill=None line=Type(None)
+  [text-218] type=AUTO_SHAPE (1) at (49.5, 292.5, 307.5, 63.75) fill=None line=Type(None)
+  [text-219] type=AUTO_SHAPE (1) at (378.75, 452.25, 532.5, 22.5) fill=None line=Type(None)
+  [DLT_0] type=AUTO_SHAPE (1) at (49.5, 492.75, 288.75, 24.75) fill=None line=Type(None)
+  [DLT_1] type=AUTO_SHAPE (1) at (355.5, 492.75, 288.75, 24.75) fill=None line=Type(None)
+  [DLT_2] type=AUTO_SHAPE (1) at (661.5, 492.75, 288.75, 24.75) fill=None line=Type(None)
+
+==================== SLIDE 08 ====================
+Shapes count: 62 | Types: {'AUTO_SHAPE (1)', 'FREEFORM (5)', 'PICTURE (13)'}
+Text shapes (17):
+  [TITLE] at box (48.0, 48.75, 864.0, 48.75): RANSAC giữ những điểm nhất quán hình học
+      run: 'RANSAC giữ những điểm nhất quán hình học' (sz=31.5, bld=True, font=Segoe UI, clr=#132E57)
+  [SUBTITLE] at box (48.0, 101.25, 864.0, 33.75): Một mô hình tốt phải được nhiều cặp điểm đồng thuận
+      run: 'Một mô hình tốt phải được nhiều cặp điểm đồng thuận' (sz=16.5, bld=False, font=Segoe UI, clr=#526985)
+  [PAGE] at box (892.5, 510.0, 21.0, 18.0): 08
+      run: '08' (sz=11.25, bld=False, font=Segoe UI, clr=#526985)
+  [text-222] at box (53.25, 141.75, 18.75, 25.5): 1
+      run: '1' (sz=15.75, bld=True, font=Segoe UI, clr=#FFFFFF)
+  [RANSAC_0] at box (84.0, 141.0, 165.0, 33.75): Chọn bốn cặp
+      run: 'Chọn bốn cặp' (sz=17.25, bld=True, font=Segoe UI, clr=#132E57)
+  [text-225] at box (270.75, 141.75, 18.75, 25.5): 2
+      run: '2' (sz=15.75, bld=True, font=Segoe UI, clr=#FFFFFF)
+  [RANSAC_1] at box (301.5, 141.0, 165.0, 33.75): Ước lượng H
+      run: 'Ước lượng H' (sz=17.25, bld=True, font=Segoe UI, clr=#132E57)
+  [text-228] at box (488.25, 141.75, 18.75, 25.5): 3
+      run: '3' (sz=15.75, bld=True, font=Segoe UI, clr=#FFFFFF)
+  [RANSAC_2] at box (519.0, 141.0, 165.0, 33.75): Đếm inlier
+      run: 'Đếm inlier' (sz=17.25, bld=True, font=Segoe UI, clr=#132E57)
+  [text-231] at box (705.75, 141.75, 18.75, 25.5): 4
+      run: '4' (sz=15.75, bld=True, font=Segoe UI, clr=#FFFFFF)
+  [RANSAC_3] at box (736.5, 141.0, 165.0, 33.75): Ước lượng lại
+      run: 'Ước lượng lại' (sz=17.25, bld=True, font=Segoe UI, clr=#132E57)
+  [text-232] at box (84.0, 166.5, 165.0, 18.75): ngẫu nhiên
+      run: 'ngẫu nhiên' (sz=12.75, bld=False, font=Segoe UI, clr=#526985)
+  [text-238] at box (271.5, 179.25, 150.0, 21.75): Lặp nhiều lần
+      run: 'Lặp nhiều lần' (sz=13.5, bld=True, font=Segoe UI, clr=#165DDE)
+  [INLIERS_NUMBER] at box (700.5, 238.5, 210.0, 77.25): 226
+      run: '226' (sz=62.25, bld=True, font=Segoe UI, clr=#165DDE)
+  [text-269] at box (700.5, 324.0, 210.0, 54.75): inlier / 249 cặp khớp
+      run: 'inlier / 249 cặp khớp' (sz=18.75, bld=True, font=Segoe UI, clr=#132E57)
+  [text-270] at box (700.5, 401.25, 210.0, 22.5): Một cặp ảnh trong bộ thực nghiệm
+      run: 'Một cặp ảnh trong bộ thực nghiệm' (sz=13.5, bld=False, font=Segoe UI, clr=#526985)
+  [text-271] at box (48.0, 466.5, 840.0, 37.5): Tương đồng descriptor được kiểm tra thêm bằng quan hệ hình học
+      run: 'Tương đồng descriptor được kiểm tra thêm bằng quan hệ hình học' (sz=19.5, bld=True, font=Segoe UI, clr=#132E57)
+Pictures (2):
+  [Picture 26] at box: (48.13, 210.0, 281.0, 210.75) | file: image.jpeg
+  [Picture 27] at box: (375.13, 210.0, 281.0, 210.75) | file: image.jpeg
+Other shapes (60):
+  [shape-220] type=AUTO_SHAPE (1) at (48.0, 33.0, 27.0, 3.75) fill=#165DDE line=Type(None)
+  [TITLE] type=AUTO_SHAPE (1) at (48.0, 48.75, 864.0, 48.75) fill=None line=Type(None)
+  [SUBTITLE] type=AUTO_SHAPE (1) at (48.0, 101.25, 864.0, 33.75) fill=None line=Type(None)
+  [PAGE] type=AUTO_SHAPE (1) at (892.5, 510.0, 21.0, 18.0) fill=None line=Type(None)
+  [dot-221] type=AUTO_SHAPE (1) at (48.0, 139.5, 25.5, 25.5) fill=#165DDE line=Type(None)
+  [text-222] type=AUTO_SHAPE (1) at (53.25, 141.75, 18.75, 25.5) fill=None line=Type(None)
+  [RANSAC_0] type=AUTO_SHAPE (1) at (84.0, 141.0, 165.0, 33.75) fill=None line=Type(None)
+  [line-223] type=FREEFORM (5) at (234.0, 151.5, 19.5, 0.08) fill=None line=#D8E4F2
+  [dot-224] type=AUTO_SHAPE (1) at (265.5, 139.5, 25.5, 25.5) fill=#165DDE line=Type(None)
+  [text-225] type=AUTO_SHAPE (1) at (270.75, 141.75, 18.75, 25.5) fill=None line=Type(None)
+  [RANSAC_1] type=AUTO_SHAPE (1) at (301.5, 141.0, 165.0, 33.75) fill=None line=Type(None)
+  [line-226] type=FREEFORM (5) at (451.5, 151.5, 19.5, 0.08) fill=None line=#D8E4F2
+  [dot-227] type=AUTO_SHAPE (1) at (483.0, 139.5, 25.5, 25.5) fill=#165DDE line=Type(None)
+  [text-228] type=AUTO_SHAPE (1) at (488.25, 141.75, 18.75, 25.5) fill=None line=Type(None)
+  [RANSAC_2] type=AUTO_SHAPE (1) at (519.0, 141.0, 165.0, 33.75) fill=None line=Type(None)
+  [line-229] type=FREEFORM (5) at (669.0, 151.5, 19.5, 0.08) fill=None line=#D8E4F2
+  [dot-230] type=AUTO_SHAPE (1) at (700.5, 139.5, 25.5, 25.5) fill=#165DDE line=Type(None)
+  [text-231] type=AUTO_SHAPE (1) at (705.75, 141.75, 18.75, 25.5) fill=None line=Type(None)
+  [RANSAC_3] type=AUTO_SHAPE (1) at (736.5, 141.0, 165.0, 33.75) fill=None line=Type(None)
+  [text-232] type=AUTO_SHAPE (1) at (84.0, 166.5, 165.0, 18.75) fill=None line=Type(None)
+  [line-233] type=FREEFORM (5) at (606.0, 171.0, 0.08, 18.75) fill=None line=#165DDE
+  [line-234] type=FREEFORM (5) at (60.75, 189.75, 545.25, 0.08) fill=None line=#165DDE
+  [line-235] type=FREEFORM (5) at (60.75, 171.75, 0.08, 18.0) fill=None line=#165DDE
+  [poly-236] type=FREEFORM (5) at (57.0, 168.0, 7.5, 8.25) fill=#165DDE line=#165DDE
+  [shape-237] type=AUTO_SHAPE (1) at (262.5, 178.5, 163.5, 22.5) fill=#FFFFFF line=Type(None)
+  [text-238] type=AUTO_SHAPE (1) at (271.5, 179.25, 150.0, 21.75) fill=None line=Type(None)
+  [MATCH_GOOD_239] type=FREEFORM (5) at (270.14, 314.67, 205.88, 1.95) fill=None line=#23A8CE
+  [MATCH_BAD_240] type=FREEFORM (5) at (220.25, 357.66, 203.54, 2.26) fill=None line=#B76A12
+  [MATCH_BAD_241] type=FREEFORM (5) at (322.12, 390.88, 196.37, 2.62) fill=None line=#B76A12
+  [MATCH_GOOD_242] type=FREEFORM (5) at (306.12, 281.94, 204.4, 5.4) fill=None line=#23A8CE
+  [MATCH_GOOD_243] type=FREEFORM (5) at (275.48, 333.19, 204.84, 1.55) fill=None line=#23A8CE
+  [MATCH_GOOD_244] type=FREEFORM (5) at (269.8, 324.53, 205.5, 1.61) fill=None line=#23A8CE
+  [MATCH_GOOD_245] type=FREEFORM (5) at (304.99, 295.76, 203.96, 4.32) fill=None line=#23A8CE
+  [MATCH_GOOD_246] type=FREEFORM (5) at (179.78, 232.04, 202.82, 8.29) fill=None line=#23A8CE
+  [MATCH_GOOD_247] type=FREEFORM (5) at (282.31, 309.85, 205.24, 2.52) fill=None line=#23A8CE
+  [MATCH_BAD_248] type=FREEFORM (5) at (251.59, 333.33, 206.18, 0.88) fill=None line=#B76A12
+  [MATCH_GOOD_249] type=FREEFORM (5) at (276.24, 220.08, 209.28, 5.16) fill=None line=#23A8CE
+  [MATCH_GOOD_250] type=FREEFORM (5) at (264.91, 231.68, 209.75, 3.19) fill=None line=#23A8CE
+  [MATCH_GOOD_251] type=FREEFORM (5) at (323.53, 271.76, 202.24, 7.22) fill=None line=#23A8CE
+  [MATCH_GOOD_252] type=FREEFORM (5) at (316.26, 262.5, 203.66, 7.24) fill=None line=#23A8CE
+  [MATCH_GOOD_253] type=FREEFORM (5) at (191.86, 290.66, 202.36, 2.89) fill=None line=#23A8CE
+  [MATCH_GOOD_254] type=FREEFORM (5) at (316.01, 311.12, 201.72, 3.79) fill=None line=#23A8CE
+  [MATCH_GOOD_255] type=FREEFORM (5) at (269.37, 216.8, 210.23, 4.36) fill=None line=#23A8CE
+  [MATCH_GOOD_256] type=FREEFORM (5) at (325.61, 293.0, 200.72, 5.69) fill=None line=#23A8CE
+  [MATCH_GOOD_257] type=FREEFORM (5) at (231.61, 302.3, 206.3, 0.21) fill=None line=#23A8CE
+  [MATCH_GOOD_258] type=FREEFORM (5) at (305.87, 262.39, 205.12, 6.58) fill=None line=#23A8CE
+  [MATCH_GOOD_259] type=FREEFORM (5) at (181.73, 220.17, 203.64, 9.04) fill=None line=#23A8CE
+  [MATCH_BAD_260] type=FREEFORM (5) at (304.99, 215.02, 206.4, 9.38) fill=None line=#B76A12
+  [MATCH_GOOD_261] type=FREEFORM (5) at (317.4, 275.37, 202.75, 7.03) fill=None line=#23A8CE
+  [MATCH_GOOD_262] type=FREEFORM (5) at (188.16, 211.89, 204.99, 8.89) fill=None line=#23A8CE
+  [MATCH_GOOD_263] type=FREEFORM (5) at (317.69, 272.99, 202.74, 6.82) fill=None line=#23A8CE
+  [MATCH_GOOD_264] type=FREEFORM (5) at (322.19, 269.56, 202.55, 7.4) fill=None line=#23A8CE
+  [MATCH_BAD_265] type=FREEFORM (5) at (230.19, 259.41, 208.8, 0.57) fill=None line=#B76A12
+  [MATCH_GOOD_266] type=FREEFORM (5) at (205.03, 215.34, 207.62, 5.82) fill=None line=#23A8CE
+  [MATCH_GOOD_267] type=FREEFORM (5) at (195.74, 290.08, 203.16, 2.75) fill=None line=#23A8CE
+  [MATCH_GOOD_268] type=FREEFORM (5) at (290.7, 259.08, 207.18, 5.51) fill=None line=#23A8CE
+  [INLIERS_NUMBER] type=AUTO_SHAPE (1) at (700.5, 238.5, 210.0, 77.25) fill=None line=Type(None)
+  [text-269] type=AUTO_SHAPE (1) at (700.5, 324.0, 210.0, 54.75) fill=None line=Type(None)
+  [text-270] type=AUTO_SHAPE (1) at (700.5, 401.25, 210.0, 22.5) fill=None line=Type(None)
+  [text-271] type=AUTO_SHAPE (1) at (48.0, 466.5, 840.0, 37.5) fill=None line=Type(None)
+
+==================== SLIDE 09 ====================
+Shapes count: 29 | Types: {'AUTO_SHAPE (1)', 'FREEFORM (5)', 'PICTURE (13)'}
+Text shapes (13):
+  [TITLE] at box (48.0, 48.75, 864.0, 48.75): Căn chỉnh cả chuỗi, giảm sai số tích lũy
+      run: 'Căn chỉnh cả chuỗi, giảm sai số tích lũy' (sz=31.5, bld=True, font=Segoe UI, clr=#132E57)
+  [SUBTITLE] at box (48.0, 101.25, 864.0, 33.75): Thứ tự ảnh và tham số hình học được xử lý ở cấp toàn cục
+      run: 'Thứ tự ảnh và tham số hình học được xử lý ở cấp toàn cục' (sz=16.5, bld=False, font=Segoe UI, clr=#526985)
+  [PAGE] at box (892.5, 510.0, 21.0, 18.0): 09
+      run: '09' (sz=11.25, bld=False, font=Segoe UI, clr=#526985)
+  [text-274] at box (123.75, 314.25, 17.25, 24.75): 1
+      run: '1' (sz=15.0, bld=True, font=Segoe UI, clr=#FFFFFF)
+  [text-277] at box (297.75, 314.25, 17.25, 24.75): 2
+      run: '2' (sz=15.0, bld=True, font=Segoe UI, clr=#FFFFFF)
+  [text-280] at box (471.75, 314.25, 17.25, 24.75): 3
+      run: '3' (sz=15.0, bld=True, font=Segoe UI, clr=#FFFFFF)
+  [text-283] at box (645.75, 314.25, 17.25, 24.75): 4
+      run: '4' (sz=15.0, bld=True, font=Segoe UI, clr=#FFFFFF)
+  [text-286] at box (819.75, 314.25, 17.25, 24.75): 5
+      run: '5' (sz=15.0, bld=True, font=Segoe UI, clr=#FFFFFF)
+  [text-287] at box (387.75, 346.5, 180.0, 22.5): Ảnh tham chiếu
+      run: 'Ảnh tham chiếu' (sz=13.5, bld=False, font=Segoe UI, clr=#165DDE)
+  [ORDER_TITLE] at box (48.0, 395.25, 352.5, 32.25): Held–Karp
+      run: 'Held–Karp' (sz=23.25, bld=True, font=Segoe UI, clr=#165DDE)
+  [text-288] at box (48.0, 435.0, 367.5, 51.0): Tìm thứ tự dựa trên số inlier
+      run: 'Tìm thứ tự dựa trên số inlier' (sz=18.0, bld=False, font=Segoe UI, clr=#132E57)
+  [REFINE_TITLE] at box (512.25, 395.25, 393.75, 32.25): Tinh chỉnh đồng thời
+      run: 'Tinh chỉnh đồng thời' (sz=23.25, bld=True, font=Segoe UI, clr=#165DDE)
+  [text-290] at box (512.25, 435.0, 397.5, 55.5): Huber và Levenberg–Marquardt // giúp các quan hệ nhất quán hơn
+      run: 'Huber và Levenberg–Marquardt' (sz=18.0, bld=False, font=Segoe UI, clr=#132E57)
+      run: 'giúp các quan hệ nhất quán hơn' (sz=18.0, bld=False, font=Segoe UI, clr=#132E57)
+Pictures (5):
+  [Picture 4] at box: (48.0, 171.75, 162.0, 121.5) | file: image.jpeg
+  [Picture 8] at box: (222.0, 171.75, 162.0, 121.5) | file: image.jpeg
+  [Picture 12] at box: (396.0, 171.75, 162.0, 121.5) | file: image.jpeg
+  [Picture 16] at box: (570.0, 171.75, 162.0, 121.5) | file: image.jpeg
+  [Picture 20] at box: (744.0, 171.75, 162.0, 121.5) | file: image.jpeg
+Other shapes (24):
+  [shape-272] type=AUTO_SHAPE (1) at (48.0, 33.0, 27.0, 3.75) fill=#165DDE line=Type(None)
+  [TITLE] type=AUTO_SHAPE (1) at (48.0, 48.75, 864.0, 48.75) fill=None line=Type(None)
+  [SUBTITLE] type=AUTO_SHAPE (1) at (48.0, 101.25, 864.0, 33.75) fill=None line=Type(None)
+  [PAGE] type=AUTO_SHAPE (1) at (892.5, 510.0, 21.0, 18.0) fill=None line=Type(None)
+  [dot-273] type=AUTO_SHAPE (1) at (117.0, 312.75, 24.0, 24.0) fill=#165DDE line=Type(None)
+  [text-274] type=AUTO_SHAPE (1) at (123.75, 314.25, 17.25, 24.75) fill=None line=Type(None)
+  [line-275] type=FREEFORM (5) at (142.5, 324.75, 147.0, 0.08) fill=None line=#D8E4F2
+  [dot-276] type=AUTO_SHAPE (1) at (291.0, 312.75, 24.0, 24.0) fill=#165DDE line=Type(None)
+  [text-277] type=AUTO_SHAPE (1) at (297.75, 314.25, 17.25, 24.75) fill=None line=Type(None)
+  [line-278] type=FREEFORM (5) at (316.5, 324.75, 147.0, 0.08) fill=None line=#D8E4F2
+  [dot-279] type=AUTO_SHAPE (1) at (465.0, 312.75, 24.0, 24.0) fill=#132E57 line=Type(None)
+  [text-280] type=AUTO_SHAPE (1) at (471.75, 314.25, 17.25, 24.75) fill=None line=Type(None)
+  [line-281] type=FREEFORM (5) at (490.5, 324.75, 147.0, 0.08) fill=None line=#D8E4F2
+  [dot-282] type=AUTO_SHAPE (1) at (639.0, 312.75, 24.0, 24.0) fill=#165DDE line=Type(None)
+  [text-283] type=AUTO_SHAPE (1) at (645.75, 314.25, 17.25, 24.75) fill=None line=Type(None)
+  [line-284] type=FREEFORM (5) at (664.5, 324.75, 147.0, 0.08) fill=None line=#D8E4F2
+  [dot-285] type=AUTO_SHAPE (1) at (813.0, 312.75, 24.0, 24.0) fill=#165DDE line=Type(None)
+  [text-286] type=AUTO_SHAPE (1) at (819.75, 314.25, 17.25, 24.75) fill=None line=Type(None)
+  [text-287] type=AUTO_SHAPE (1) at (387.75, 346.5, 180.0, 22.5) fill=None line=Type(None)
+  [ORDER_TITLE] type=AUTO_SHAPE (1) at (48.0, 395.25, 352.5, 32.25) fill=None line=Type(None)
+  [text-288] type=AUTO_SHAPE (1) at (48.0, 435.0, 367.5, 51.0) fill=None line=Type(None)
+  [line-289] type=FREEFORM (5) at (464.25, 390.75, 0.08, 92.25) fill=None line=#D8E4F2
+  [REFINE_TITLE] type=AUTO_SHAPE (1) at (512.25, 395.25, 393.75, 32.25) fill=None line=Type(None)
+  [text-290] type=AUTO_SHAPE (1) at (512.25, 435.0, 397.5, 55.5) fill=None line=Type(None)
+
+==================== SLIDE 10 ====================
+Shapes count: 10 | Types: {'AUTO_SHAPE (1)', 'PICTURE (13)'}
+Text shapes (7):
+  [TITLE] at box (48.0, 48.75, 864.0, 48.75): Góc nhìn rộng cần phép chiếu phù hợp
+      run: 'Góc nhìn rộng cần phép chiếu phù hợp' (sz=31.5, bld=True, font=Segoe UI, clr=#132E57)
+  [PAGE] at box (892.5, 510.0, 21.0, 18.0): 10
+      run: '10' (sz=11.25, bld=False, font=Segoe UI, clr=#526985)
+  [text-292] at box (48.0, 111.0, 255.0, 26.25): PHẲNG
+      run: 'PHẲNG' (sz=15.0, bld=True, font=Segoe UI, clr=#132E57)
+  [PLANAR_STRETCH] at box (696.0, 111.0, 216.0, 26.25): Độ giãn 4,08×
+      run: 'Độ giãn 4,08×' (sz=17.25, bld=False, font=Segoe UI, clr=#526985)
+  [text-293] at box (48.0, 255.0, 255.0, 26.25): HÌNH TRỤ
+      run: 'HÌNH TRỤ' (sz=15.0, bld=True, font=Segoe UI, clr=#165DDE)
+  [CYL_STRETCH] at box (696.0, 255.0, 216.0, 26.25): Độ giãn 1,26×
+      run: 'Độ giãn 1,26×' (sz=17.25, bld=True, font=Segoe UI, clr=#165DDE)
+  [text-294] at box (48.0, 510.0, 817.5, 22.5): Tự động xét độ giãn, sai số căn chỉnh và vùng giữ lại sau crop
+      run: 'Tự động xét độ giãn, sai số căn chỉnh và vùng giữ lại sau crop' (sz=13.5, bld=False, font=Segoe UI, clr=#526985)
+Pictures (2):
+  [Picture 5] at box: (48.44, 142.5, 863.11, 87.75) | file: image.jpeg
+  [Picture 8] at box: (48.71, 285.0, 862.58, 219.0) | file: image.jpeg
+Other shapes (8):
+  [shape-291] type=AUTO_SHAPE (1) at (48.0, 33.0, 27.0, 3.75) fill=#165DDE line=Type(None)
+  [TITLE] type=AUTO_SHAPE (1) at (48.0, 48.75, 864.0, 48.75) fill=None line=Type(None)
+  [PAGE] type=AUTO_SHAPE (1) at (892.5, 510.0, 21.0, 18.0) fill=None line=Type(None)
+  [text-292] type=AUTO_SHAPE (1) at (48.0, 111.0, 255.0, 26.25) fill=None line=Type(None)
+  [PLANAR_STRETCH] type=AUTO_SHAPE (1) at (696.0, 111.0, 216.0, 26.25) fill=None line=Type(None)
+  [text-293] type=AUTO_SHAPE (1) at (48.0, 255.0, 255.0, 26.25) fill=None line=Type(None)
+  [CYL_STRETCH] type=AUTO_SHAPE (1) at (696.0, 255.0, 216.0, 26.25) fill=None line=Type(None)
+  [text-294] type=AUTO_SHAPE (1) at (48.0, 510.0, 817.5, 22.5) fill=None line=Type(None)
+
+==================== SLIDE 11 ====================
+Shapes count: 15 | Types: {'AUTO_SHAPE (1)', 'PICTURE (13)'}
+Text shapes (12):
+  [TITLE] at box (48.0, 48.75, 864.0, 48.75): Hình khớp rồi, vùng nối vẫn cần xử lý
+      run: 'Hình khớp rồi, vùng nối vẫn cần xử lý' (sz=31.5, bld=True, font=Segoe UI, clr=#132E57)
+  [SUBTITLE] at box (48.0, 101.25, 864.0, 33.75): Cân bằng sáng, chọn đường nối và trộn theo trọng số
+      run: 'Cân bằng sáng, chọn đường nối và trộn theo trọng số' (sz=16.5, bld=False, font=Segoe UI, clr=#526985)
+  [PAGE] at box (892.5, 510.0, 21.0, 18.0): 11
+      run: '11' (sz=11.25, bld=False, font=Segoe UI, clr=#526985)
+  [text-296] at box (48.0, 146.25, 405.0, 30.0): Ghép cứng để đối chiếu
+      run: 'Ghép cứng để đối chiếu' (sz=19.5, bld=True, font=Segoe UI, clr=#526985)
+  [text-297] at box (499.5, 146.25, 412.5, 30.0): Sau gain, seam và feather
+      run: 'Sau gain, seam và feather' (sz=19.5, bld=True, font=Segoe UI, clr=#165DDE)
+  [text-298] at box (499.5, 425.25, 412.5, 18.75): Đường xanh chỉ minh họa ranh giới vùng đóng góp
+      run: 'Đường xanh chỉ minh họa ranh giới vùng đóng góp' (sz=12.75, bld=False, font=Segoe UI, clr=#526985)
+  [BLEND_0] at box (48.0, 446.25, 273.75, 25.5): Gain
+      run: 'Gain' (sz=19.5, bld=True, font=Segoe UI, clr=#165DDE)
+  [text-299] at box (48.0, 478.5, 273.75, 24.0): Giảm lệch sáng
+      run: 'Giảm lệch sáng' (sz=16.5, bld=False, font=Segoe UI, clr=#132E57)
+  [BLEND_1] at box (354.0, 446.25, 273.75, 25.5): Graph-cut
+      run: 'Graph-cut' (sz=19.5, bld=True, font=Segoe UI, clr=#165DDE)
+  [text-300] at box (354.0, 478.5, 273.75, 24.0): Chọn vùng chuyển ảnh
+      run: 'Chọn vùng chuyển ảnh' (sz=16.5, bld=False, font=Segoe UI, clr=#132E57)
+  [BLEND_2] at box (660.0, 446.25, 273.75, 25.5): Feather
+      run: 'Feather' (sz=19.5, bld=True, font=Segoe UI, clr=#165DDE)
+  [text-301] at box (660.0, 478.5, 273.75, 24.0): Làm mềm vùng biên
+      run: 'Làm mềm vùng biên' (sz=16.5, bld=False, font=Segoe UI, clr=#132E57)
+Pictures (2):
+  [Picture 6] at box: (48.0, 184.61, 412.5, 236.78) | file: image.png
+  [Picture 7] at box: (499.5, 184.61, 412.5, 236.78) | file: image.png
+Other shapes (13):
+  [shape-295] type=AUTO_SHAPE (1) at (48.0, 33.0, 27.0, 3.75) fill=#165DDE line=Type(None)
+  [TITLE] type=AUTO_SHAPE (1) at (48.0, 48.75, 864.0, 48.75) fill=None line=Type(None)
+  [SUBTITLE] type=AUTO_SHAPE (1) at (48.0, 101.25, 864.0, 33.75) fill=None line=Type(None)
+  [PAGE] type=AUTO_SHAPE (1) at (892.5, 510.0, 21.0, 18.0) fill=None line=Type(None)
+  [text-296] type=AUTO_SHAPE (1) at (48.0, 146.25, 405.0, 30.0) fill=None line=Type(None)
+  [text-297] type=AUTO_SHAPE (1) at (499.5, 146.25, 412.5, 30.0) fill=None line=Type(None)
+  [text-298] type=AUTO_SHAPE (1) at (499.5, 425.25, 412.5, 18.75) fill=None line=Type(None)
+  [BLEND_0] type=AUTO_SHAPE (1) at (48.0, 446.25, 273.75, 25.5) fill=None line=Type(None)
+  [text-299] type=AUTO_SHAPE (1) at (48.0, 478.5, 273.75, 24.0) fill=None line=Type(None)
+  [BLEND_1] type=AUTO_SHAPE (1) at (354.0, 446.25, 273.75, 25.5) fill=None line=Type(None)
+  [text-300] type=AUTO_SHAPE (1) at (354.0, 478.5, 273.75, 24.0) fill=None line=Type(None)
+  [BLEND_2] type=AUTO_SHAPE (1) at (660.0, 446.25, 273.75, 25.5) fill=None line=Type(None)
+  [text-301] type=AUTO_SHAPE (1) at (660.0, 478.5, 273.75, 24.0) fill=None line=Type(None)
+
+==================== SLIDE 12 ====================
+Shapes count: 94 | Types: {'AUTO_SHAPE (1)', 'FREEFORM (5)', 'PICTURE (13)'}
+Text shapes (10):
+  [TITLE] at box (48.0, 48.75, 864.0, 48.75): Mỗi pixel đầu ra quay về tìm dữ liệu nguồn
+      run: 'Mỗi pixel đầu ra quay về tìm dữ liệu nguồn' (sz=31.5, bld=True, font=Segoe UI, clr=#132E57)
+  [SUBTITLE] at box (48.0, 101.25, 864.0, 33.75): Ánh xạ ngược và nội suy song tuyến tính, xử lý theo từng vùng
+      run: 'Ánh xạ ngược và nội suy song tuyến tính, xử lý theo từng vùng' (sz=16.5, bld=False, font=Segoe UI, clr=#526985)
+  [PAGE] at box (892.5, 510.0, 21.0, 18.0): 12
+      run: '12' (sz=11.25, bld=False, font=Segoe UI, clr=#526985)
+  [text-303] at box (48.0, 147.75, 255.0, 22.5): ẢNH NGUỒN
+      run: 'ẢNH NGUỒN' (sz=13.5, bld=False, font=Segoe UI, clr=#526985)
+  [text-304] at box (517.5, 147.75, 367.5, 22.5): LƯỚI PIXEL ĐẦU RA
+      run: 'LƯỚI PIXEL ĐẦU RA' (sz=13.5, bld=False, font=Segoe UI, clr=#526985)
+  [text-387] at box (306.75, 208.5, 176.25, 33.0): Tọa độ nguồn
+      run: 'Tọa độ nguồn' (sz=17.25, bld=True, font=Segoe UI, clr=#165DDE)
+  [text-388] at box (48.0, 359.25, 390.0, 55.5): Bốn lân cận // cho một giá trị nội suy
+      run: 'Bốn lân cận' (sz=18.0, bld=False, font=Segoe UI, clr=#132E57)
+      run: 'cho một giá trị nội suy' (sz=18.0, bld=False, font=Segoe UI, clr=#132E57)
+  [text-389] at box (517.5, 359.25, 393.75, 55.5): Tile giới hạn bộ nhớ làm việc // Memmap lưu kết quả lớn
+      run: 'Tile giới hạn bộ nhớ làm việc' (sz=18.0, bld=False, font=Segoe UI, clr=#132E57)
+      run: 'Memmap lưu kết quả lớn' (sz=18.0, bld=False, font=Segoe UI, clr=#132E57)
+  [CROP_TITLE] at box (468.0, 441.75, 442.5, 33.75): Crop theo vùng có dữ liệu
+      run: 'Crop theo vùng có dữ liệu' (sz=21.75, bld=True, font=Segoe UI, clr=#165DDE)
+  [text-390] at box (468.0, 480.0, 435.0, 29.25): Giữ khung kín, chấp nhận mất cảnh ở mép
+      run: 'Giữ khung kín, chấp nhận mất cảnh ở mép' (sz=16.5, bld=False, font=Segoe UI, clr=#132E57)
+Pictures (1):
+  [Picture 91] at box: (48.0, 428.44, 375.0, 107.63) | file: image.png
+Other shapes (93):
+  [shape-302] type=AUTO_SHAPE (1) at (48.0, 33.0, 27.0, 3.75) fill=#165DDE line=Type(None)
+  [TITLE] type=AUTO_SHAPE (1) at (48.0, 48.75, 864.0, 48.75) fill=None line=Type(None)
+  [SUBTITLE] type=AUTO_SHAPE (1) at (48.0, 101.25, 864.0, 33.75) fill=None line=Type(None)
+  [PAGE] type=AUTO_SHAPE (1) at (892.5, 510.0, 21.0, 18.0) fill=None line=Type(None)
+  [text-303] type=AUTO_SHAPE (1) at (48.0, 147.75, 255.0, 22.5) fill=None line=Type(None)
+  [text-304] type=AUTO_SHAPE (1) at (517.5, 147.75, 367.5, 22.5) fill=None line=Type(None)
+  [line-305] type=FREEFORM (5) at (48.0, 186.75, 0.08, 153.75) fill=None line=#D8E4F2
+  [line-306] type=FREEFORM (5) at (78.75, 186.75, 0.08, 153.75) fill=None line=#D8E4F2
+  [line-307] type=FREEFORM (5) at (109.5, 186.75, 0.08, 153.75) fill=None line=#D8E4F2
+  [line-308] type=FREEFORM (5) at (140.25, 186.75, 0.08, 153.75) fill=None line=#D8E4F2
+  [line-309] type=FREEFORM (5) at (171.0, 186.75, 0.08, 153.75) fill=None line=#D8E4F2
+  [line-310] type=FREEFORM (5) at (201.75, 186.75, 0.08, 153.75) fill=None line=#D8E4F2
+  [line-311] type=FREEFORM (5) at (232.5, 186.75, 0.08, 153.75) fill=None line=#D8E4F2
+  [line-312] type=FREEFORM (5) at (263.25, 186.75, 0.08, 153.75) fill=None line=#D8E4F2
+  [line-313] type=FREEFORM (5) at (48.0, 186.75, 215.25, 0.08) fill=None line=#D8E4F2
+  [line-314] type=FREEFORM (5) at (48.0, 217.5, 215.25, 0.08) fill=None line=#D8E4F2
+  [line-315] type=FREEFORM (5) at (48.0, 248.25, 215.25, 0.08) fill=None line=#D8E4F2
+  [line-316] type=FREEFORM (5) at (48.0, 279.0, 215.25, 0.08) fill=None line=#D8E4F2
+  [line-317] type=FREEFORM (5) at (48.0, 309.75, 215.25, 0.08) fill=None line=#D8E4F2
+  [line-318] type=FREEFORM (5) at (48.0, 340.5, 215.25, 0.08) fill=None line=#D8E4F2
+  [dot-319] type=AUTO_SHAPE (1) at (135.75, 243.75, 9.0, 9.0) fill=#165DDE line=#FFFFFF
+  [dot-320] type=AUTO_SHAPE (1) at (166.5, 243.75, 9.0, 9.0) fill=#165DDE line=#FFFFFF
+  [dot-321] type=AUTO_SHAPE (1) at (135.75, 274.5, 9.0, 9.0) fill=#165DDE line=#FFFFFF
+  [dot-322] type=AUTO_SHAPE (1) at (166.5, 274.5, 9.0, 9.0) fill=#165DDE line=#FFFFFF
+  [dot-323] type=AUTO_SHAPE (1) at (146.38, 262.07, 10.5, 10.5) fill=#B76A12 line=#FFFFFF
+  [shape-324] type=AUTO_SHAPE (1) at (517.5, 186.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-325] type=AUTO_SHAPE (1) at (517.5, 217.5, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-326] type=AUTO_SHAPE (1) at (517.5, 248.25, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-327] type=AUTO_SHAPE (1) at (517.5, 279.0, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-328] type=AUTO_SHAPE (1) at (517.5, 309.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-329] type=AUTO_SHAPE (1) at (548.25, 186.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-330] type=AUTO_SHAPE (1) at (548.25, 217.5, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-331] type=AUTO_SHAPE (1) at (548.25, 248.25, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-332] type=AUTO_SHAPE (1) at (548.25, 279.0, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-333] type=AUTO_SHAPE (1) at (548.25, 309.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-334] type=AUTO_SHAPE (1) at (579.0, 186.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-335] type=AUTO_SHAPE (1) at (579.0, 217.5, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-336] type=AUTO_SHAPE (1) at (579.0, 248.25, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-337] type=AUTO_SHAPE (1) at (579.0, 279.0, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-338] type=AUTO_SHAPE (1) at (579.0, 309.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-339] type=AUTO_SHAPE (1) at (609.75, 186.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-340] type=AUTO_SHAPE (1) at (609.75, 217.5, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-341] type=AUTO_SHAPE (1) at (609.75, 248.25, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-342] type=AUTO_SHAPE (1) at (609.75, 279.0, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-343] type=AUTO_SHAPE (1) at (609.75, 309.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-344] type=AUTO_SHAPE (1) at (640.5, 186.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-345] type=AUTO_SHAPE (1) at (640.5, 217.5, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-346] type=AUTO_SHAPE (1) at (640.5, 248.25, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-347] type=AUTO_SHAPE (1) at (640.5, 279.0, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-348] type=AUTO_SHAPE (1) at (640.5, 309.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-349] type=AUTO_SHAPE (1) at (671.25, 186.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-350] type=AUTO_SHAPE (1) at (671.25, 217.5, 30.75, 30.75) fill=#EAF2FF line=#D8E4F2
+  [shape-351] type=AUTO_SHAPE (1) at (671.25, 248.25, 30.75, 30.75) fill=#EAF2FF line=#D8E4F2
+  [shape-352] type=AUTO_SHAPE (1) at (671.25, 279.0, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-353] type=AUTO_SHAPE (1) at (671.25, 309.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-354] type=AUTO_SHAPE (1) at (702.0, 186.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-355] type=AUTO_SHAPE (1) at (702.0, 217.5, 30.75, 30.75) fill=#EAF2FF line=#D8E4F2
+  [shape-356] type=AUTO_SHAPE (1) at (702.0, 248.25, 30.75, 30.75) fill=#EAF2FF line=#D8E4F2
+  [shape-357] type=AUTO_SHAPE (1) at (702.0, 279.0, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-358] type=AUTO_SHAPE (1) at (702.0, 309.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-359] type=AUTO_SHAPE (1) at (732.75, 186.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-360] type=AUTO_SHAPE (1) at (732.75, 217.5, 30.75, 30.75) fill=#EAF2FF line=#D8E4F2
+  [shape-361] type=AUTO_SHAPE (1) at (732.75, 248.25, 30.75, 30.75) fill=#EAF2FF line=#D8E4F2
+  [shape-362] type=AUTO_SHAPE (1) at (732.75, 279.0, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-363] type=AUTO_SHAPE (1) at (732.75, 309.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-364] type=AUTO_SHAPE (1) at (763.5, 186.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-365] type=AUTO_SHAPE (1) at (763.5, 217.5, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-366] type=AUTO_SHAPE (1) at (763.5, 248.25, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-367] type=AUTO_SHAPE (1) at (763.5, 279.0, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-368] type=AUTO_SHAPE (1) at (763.5, 309.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-369] type=AUTO_SHAPE (1) at (794.25, 186.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-370] type=AUTO_SHAPE (1) at (794.25, 217.5, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-371] type=AUTO_SHAPE (1) at (794.25, 248.25, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-372] type=AUTO_SHAPE (1) at (794.25, 279.0, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-373] type=AUTO_SHAPE (1) at (794.25, 309.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-374] type=AUTO_SHAPE (1) at (825.0, 186.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-375] type=AUTO_SHAPE (1) at (825.0, 217.5, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-376] type=AUTO_SHAPE (1) at (825.0, 248.25, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-377] type=AUTO_SHAPE (1) at (825.0, 279.0, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-378] type=AUTO_SHAPE (1) at (825.0, 309.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-379] type=AUTO_SHAPE (1) at (855.75, 186.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-380] type=AUTO_SHAPE (1) at (855.75, 217.5, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-381] type=AUTO_SHAPE (1) at (855.75, 248.25, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-382] type=AUTO_SHAPE (1) at (855.75, 279.0, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-383] type=AUTO_SHAPE (1) at (855.75, 309.75, 30.75, 30.75) fill=#FFFFFF line=#D8E4F2
+  [shape-384] type=AUTO_SHAPE (1) at (702.0, 248.25, 30.75, 30.75) fill=#165DDE line=Type(None)
+  [line-385] type=FREEFORM (5) at (337.5, 264.0, 344.25, 0.08) fill=None line=#165DDE
+  [poly-386] type=FREEFORM (5) at (333.75, 258.0, 11.25, 12.0) fill=#165DDE line=#165DDE
+  [text-387] type=AUTO_SHAPE (1) at (306.75, 208.5, 176.25, 33.0) fill=None line=Type(None)
+  [text-388] type=AUTO_SHAPE (1) at (48.0, 359.25, 390.0, 55.5) fill=None line=Type(None)
+  [text-389] type=AUTO_SHAPE (1) at (517.5, 359.25, 393.75, 55.5) fill=None line=Type(None)
+  [CROP_TITLE] type=AUTO_SHAPE (1) at (468.0, 441.75, 442.5, 33.75) fill=None line=Type(None)
+  [text-390] type=AUTO_SHAPE (1) at (468.0, 480.0, 435.0, 29.25) fill=None line=Type(None)
+
+==================== SLIDE 13 ====================
+Shapes count: 12 | Types: {'AUTO_SHAPE (1)', 'PICTURE (13)'}
+Text shapes (10):
+  [TITLE] at box (48.0, 48.75, 864.0, 48.75): Kết quả trên bộ năm ảnh thực tế
+      run: 'Kết quả trên bộ năm ảnh thực tế' (sz=31.5, bld=True, font=Segoe UI, clr=#132E57)
+  [SUBTITLE] at box (48.0, 101.25, 864.0, 33.75): Mỗi ảnh đầu vào 1920 × 1440; chế độ tự động chọn hình trụ
+      run: 'Mỗi ảnh đầu vào 1920 × 1440; chế độ tự động chọn hình trụ' (sz=16.5, bld=False, font=Segoe UI, clr=#526985)
+  [PAGE] at box (892.5, 510.0, 21.0, 18.0): 13
+      run: '13' (sz=11.25, bld=False, font=Segoe UI, clr=#526985)
+  [METRIC_0] at box (48.0, 151.5, 296.25, 66.0): 19,99 s
+      run: '19,99 s' (sz=48.75, bld=True, font=Segoe UI, clr=#165DDE)
+  [text-392] at box (48.0, 223.5, 296.25, 27.75): Thời gian ghép
+      run: 'Thời gian ghép' (sz=17.25, bld=False, font=Segoe UI, clr=#132E57)
+  [METRIC_1] at box (354.0, 151.5, 296.25, 66.0): 100 MP
+      run: '100 MP' (sz=48.75, bld=True, font=Segoe UI, clr=#165DDE)
+  [text-393] at box (354.0, 223.5, 296.25, 27.75): Kích thước đầu ra
+      run: 'Kích thước đầu ra' (sz=17.25, bld=False, font=Segoe UI, clr=#132E57)
+  [METRIC_2] at box (660.0, 151.5, 296.25, 66.0): 831 MB
+      run: '831 MB' (sz=48.75, bld=True, font=Segoe UI, clr=#165DDE)
+  [text-394] at box (660.0, 223.5, 296.25, 27.75): RAM đỉnh, làm tròn
+      run: 'RAM đỉnh, làm tròn' (sz=17.25, bld=False, font=Segoe UI, clr=#132E57)
+  [text-395] at box (48.0, 505.5, 840.0, 23.25): 100 MP có nội suy. Parallax và vật chuyển động vẫn là giới hạn.
+      run: '100 MP có nội suy. Parallax và vật chuyển động vẫn là giới hạn.' (sz=14.25, bld=False, font=Segoe UI, clr=#526985)
+Pictures (1):
+  [Picture 10] at box: (48.71, 274.5, 862.58, 219.0) | file: image.jpeg
+Other shapes (11):
+  [shape-391] type=AUTO_SHAPE (1) at (48.0, 33.0, 27.0, 3.75) fill=#165DDE line=Type(None)
+  [TITLE] type=AUTO_SHAPE (1) at (48.0, 48.75, 864.0, 48.75) fill=None line=Type(None)
+  [SUBTITLE] type=AUTO_SHAPE (1) at (48.0, 101.25, 864.0, 33.75) fill=None line=Type(None)
+  [PAGE] type=AUTO_SHAPE (1) at (892.5, 510.0, 21.0, 18.0) fill=None line=Type(None)
+  [METRIC_0] type=AUTO_SHAPE (1) at (48.0, 151.5, 296.25, 66.0) fill=None line=Type(None)
+  [text-392] type=AUTO_SHAPE (1) at (48.0, 223.5, 296.25, 27.75) fill=None line=Type(None)
+  [METRIC_1] type=AUTO_SHAPE (1) at (354.0, 151.5, 296.25, 66.0) fill=None line=Type(None)
+  [text-393] type=AUTO_SHAPE (1) at (354.0, 223.5, 296.25, 27.75) fill=None line=Type(None)
+  [METRIC_2] type=AUTO_SHAPE (1) at (660.0, 151.5, 296.25, 66.0) fill=None line=Type(None)
+  [text-394] type=AUTO_SHAPE (1) at (660.0, 223.5, 296.25, 27.75) fill=None line=Type(None)
+  [text-395] type=AUTO_SHAPE (1) at (48.0, 505.5, 840.0, 23.25) fill=None line=Type(None)
+
+==================== SLIDE 14 ====================
+Shapes count: 7 | Types: {'AUTO_SHAPE (1)', 'PICTURE (13)'}
+Text shapes (5):
+  [PAGE] at box (892.5, 510.0, 21.0, 18.0): 14
+      run: '14' (sz=11.25, bld=False, font=Segoe UI, clr=#526985)
+  [TITLE] at box (48.0, 51.75, 855.0, 61.5): Từ những ảnh rời,
+      run: 'Từ những ảnh rời,' (sz=43.5, bld=True, font=Segoe UI, clr=#132E57)
+  [text-397] at box (48.0, 109.5, 855.0, 61.5): một khung cảnh chung.
+      run: 'một khung cảnh chung.' (sz=43.5, bld=True, font=Segoe UI, clr=#165DDE)
+  [text-398] at box (48.0, 181.5, 864.0, 31.5): Nhóm em xin cảm ơn thầy cô và sẵn sàng trao đổi.
+      run: 'Nhóm em xin cảm ơn thầy cô và sẵn sàng trao đổi.' (sz=19.5, bld=False, font=Segoe UI, clr=#132E57)
+  [text-399] at box (48.0, 499.5, 843.75, 28.5): Tìm đúng điểm. Căn đúng hình. Làm mượt vùng nối.
+      run: 'Tìm đúng điểm. Căn đúng hình. Làm mượt vùng nối.' (sz=18.75, bld=True, font=Segoe UI, clr=#132E57)
+Pictures (1):
+  [Picture 5] at box: (0.0, 238.5, 960.0, 243.0) | file: image.jpeg
+Other shapes (6):
+  [shape-396] type=AUTO_SHAPE (1) at (48.0, 33.0, 27.0, 3.75) fill=#165DDE line=Type(None)
+  [PAGE] type=AUTO_SHAPE (1) at (892.5, 510.0, 21.0, 18.0) fill=None line=Type(None)
+  [TITLE] type=AUTO_SHAPE (1) at (48.0, 51.75, 855.0, 61.5) fill=None line=Type(None)
+  [text-397] type=AUTO_SHAPE (1) at (48.0, 109.5, 855.0, 61.5) fill=None line=Type(None)
+  [text-398] type=AUTO_SHAPE (1) at (48.0, 181.5, 864.0, 31.5) fill=None line=Type(None)
+  [text-399] type=AUTO_SHAPE (1) at (48.0, 499.5, 843.75, 28.5) fill=None line=Type(None)
