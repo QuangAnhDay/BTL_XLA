@@ -1366,8 +1366,8 @@ class ASLEnterpriseApp:
             scrollable_frame,
             title="4. Thuật Toán Lọc Phi Tuyến Không Gian Trung Vị (Median Blur Filter)",
             latex_expr=(
-                r"$I_{\mathrm{out}}(x, y) = \mathrm{median}\left(\left\{ I_{\mathrm{in}}(x + i, y + j) \;\middle|\; -2 \le i, j \le 2 \right\}\right)$" + "\n" +
-                r"$\text{Cửa sổ lân cận } W = 5 \times 5 = 25 \text{ điểm ảnh} \implies \text{Sắp xếp mức sáng và chọn giá trị thứ 13}$"
+                r"$I_{\mathrm{out}}(x, y) = \mathrm{median}\{ I_{\mathrm{in}}(x + i, y + j) \mid -2 \leq i, j \leq 2 \}$" + "\n" +
+                r"$\text{Cửa sổ } W = 5 \times 5 = 25 \text{ điểm ảnh} \quad \Rightarrow \quad I_{\mathrm{out}}(x, y) = \mathrm{sorted}(W)[13]$"
             ),
             explanation=(
                 "• Nguyên lý giải thuật: Bộ lọc không gian phi tuyến thay thế giá trị của điểm ảnh trung tâm bằng giá trị trung vị (Median) "
