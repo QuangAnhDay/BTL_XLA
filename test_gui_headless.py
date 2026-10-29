@@ -4,7 +4,7 @@ import os
 if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
-sys.path.insert(0, r"F:\OneDrive\hoc hanh\XLA\BTL_TTNT\asl-sign-language")
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "asl-sign-language"))
 import gui_app
 import tkinter as tk
 

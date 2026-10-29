@@ -8,8 +8,7 @@ Cấu trúc chuẩn Doanh nghiệp:
      - 🔍 Nhận diện & So sánh Tiền xử lý (Trực quan hóa đối sánh 3 ảnh cỡ lớn + Bảng xếp hạng xác suất thấp hơn)
      - 📊 Dashboard Thực nghiệm (Trực quan hóa đồ thị 25 mẫu test N=25)
      - 📚 Cơ sở lý thuyết & Công thức (Toán học, giải thuật tiền xử lý, không gian màu YCrCb, Softmax, CNN)
-  2. Bỏ hoàn toàn phần Hướng phát triển và tính năng Webcam.
-  3. Bảo toàn 100% mô hình CNN gốc và bộ trọng số asl_classifier.keras.
+  2. Bảo toàn 100% mô hình CNN gốc và bộ trọng số asl_classifier.keras.
 """
 
 import os

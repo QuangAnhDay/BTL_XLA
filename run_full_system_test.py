@@ -1,6 +1,6 @@
 """
 Kich ban Kiem thu Toan dien He thong ASL Sign Language (Integration Test Suite)
-Kiem tra toan bo pipeline nghien cuu tien xu ly anh va giao dien Enterprise (Khong su dung Webcam).
+Kiem tra toan bo pipeline nghien cuu tien xu ly anh va giao dien Enterprise.
 Bao toan 100% mo hinh CNN va bo trong so goc.
 """
 
@@ -136,7 +136,7 @@ def run_full_test():
         app._switch_page(p)
     root.destroy()
     print("    - Giao diện nạp đầy đủ 25 mẫu test, bảng xếp hạng Top 8 và chuyển đổi 3 phân hệ mượt mà.")
-    print("    [✓] Giao diện Enterprise hoạt động hoàn hảo không phụ thuộc Webcam.")
+    print("    [✓] Giao diện Enterprise hoạt động hoàn hảo và ổn định.")
 
     # 9. Chạy thử nghiệm hàng loạt trên 10 ảnh đầu tiên từ test_data (Đầy đủ 5 Phương án)
     print("\n[MỤC 9] Chạy thử nghiệm hàng loạt trên 10 ảnh đầu tiên từ test_data (5 Phương án):")
