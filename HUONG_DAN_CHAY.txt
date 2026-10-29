@@ -1,0 +1,25 @@
+================================================================================
+HUONG DAN KHOI CHAY NHANH DU AN (DANH CHO GIANG VIEN / NGUOI CHAM)
+================================================================================
+
+1. CAI DAT MOI TRUONG & THU VIEN:
+   Mo Terminal (Command Prompt / PowerShell) tai thu muc nay va chay lenh:
+   
+   pip install -r requirements.txt
+
+2. KHOI CHAY UNG DUNG:
+   - Cach 1 (Nhanh nhat tren Windows): 
+     Nhap dup chuot vao file: run_gui.bat
+     
+   - Cach 2 (Bang dong lenh):
+     python asl-sign-language/gui_app.py
+
+3. CHAY KIEM THU TU DONG (INTEGRATION TEST):
+   python run_full_system_test.py
+
+--------------------------------------------------------------------------------
+* Mo hinh CNN va bo trong so goc: asl-sign-language/models/asl_classifier.keras
+* Du lieu 25 mau thuc nghiem: test_data/
+* Bao cao chi tiet: Bao_Cao_ASL_Preprocessing_CNN.docx
+* Slide thuyet trinh: ASL_Preprocessing_CNN_Evaluation_v4.pptx
+================================================================================
