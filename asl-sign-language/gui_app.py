@@ -112,6 +112,7 @@ class ASLEnterpriseApp:
         candidates_test_dir = [
             os.path.join(self.project_root, "test_data"),
             os.path.join(self.base_dir, "test_data"),
+            r"F:\OneDrive\hoc hanh\XLA\BTL_XLA\test_data",
             r"F:\OneDrive\hoc hanh\XLA\BTL_TTNT\test_data"
         ]
         self.test_data_dir = None
@@ -124,6 +125,7 @@ class ASLEnterpriseApp:
         candidates_json = [
             os.path.join(self.project_root, "benchmark_results.json"),
             os.path.join(self.base_dir, "benchmark_results.json"),
+            r"F:\OneDrive\hoc hanh\XLA\BTL_XLA\benchmark_results.json",
             r"F:\OneDrive\hoc hanh\XLA\BTL_TTNT\benchmark_results.json"
         ]
         self.benchmark_json_path = candidates_json[0]

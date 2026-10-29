@@ -47,7 +47,7 @@ Hệ thống được phát triển dưới dạng **Bộ công cụ Doanh nghi�
 ## 3. CẤU TRÚC THƯ MỤC DỰ ÁN
 
 ```
-BTL_TTNT/
+BTL_XLA/
 ├── asl-sign-language/
 │   ├── models/
 │   │   └── asl_classifier.keras       # Mô hình CNN 29 lớp (GIỮ NGUYÊN GỐC 100%)
@@ -79,7 +79,7 @@ run_gui.bat
 ### 4.2. Khởi chạy bằng dòng lệnh
 Kích hoạt môi trường ảo Python và khởi chạy:
 ```powershell
-cd "F:\OneDrive\hoc hanh\XLA\BTL_TTNT"
+cd "F:\OneDrive\hoc hanh\XLA\BTL_XLA"
 .\.venv\Scripts\python.exe asl-sign-language\gui_app.py
 ```
 

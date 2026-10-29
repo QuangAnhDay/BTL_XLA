@@ -9,17 +9,18 @@ if hasattr(sys.stdout, 'reconfigure'):
 if hasattr(sys.stderr, 'reconfigure'):
     sys.stderr.reconfigure(encoding='utf-8', errors='replace')
 
-sys.path.insert(0, r"F:\OneDrive\hoc hanh\XLA\BTL_TTNT\asl-sign-language")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(BASE_DIR, "asl-sign-language"))
 from preprocessing import imread_unicode
 from experiment_runner import ExperimentRunner
 import tensorflow as tf
 
-model_path = r"F:\OneDrive\hoc hanh\XLA\BTL_TTNT\asl-sign-language\models\asl_classifier.keras"
+model_path = os.path.join(BASE_DIR, "asl-sign-language", "models", "asl_classifier.keras")
 classes = [chr(i) for i in range(ord('A'), ord('Z') + 1)] + ['del', 'nothing', 'space']
 model = tf.keras.models.load_model(model_path)
 runner = ExperimentRunner(model, classes)
 
-test_dir = r"F:\OneDrive\hoc hanh\XLA\BTL_TTNT\test_data"
+test_dir = os.path.join(BASE_DIR, "test_data")
 files = sorted(glob.glob(os.path.join(test_dir, "*.png")))
 
 expected_labels = [chr(ord('A') + i) for i in range(25)]
@@ -97,7 +98,7 @@ for v in variants:
 
 print("=" * 80)
 
-out_json = r"F:\OneDrive\hoc hanh\XLA\BTL_TTNT\benchmark_results.json"
+out_json = os.path.join(BASE_DIR, "benchmark_results.json")
 with open(out_json, "w", encoding="utf-8") as fp:
     json.dump({'summary': summary, 'samples': per_sample_records}, fp, ensure_ascii=False, indent=2)
 
