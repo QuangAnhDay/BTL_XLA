@@ -1,4 +1,6 @@
-tensorflow
-opencv-python
-numpy
-pillow
+# Dependencies for ASL Vision Pro - Enterprise Edition
+tensorflow>=2.15.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+pillow>=9.5.0
+matplotlib>=3.7.0
